@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roomly</title>
+    <link rel="shortcut icon" href="./images/Roomly.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/detail_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/detail_page.js"></script>
+</head>
+<body>
+    <div class="header_outer">
+        <header class="header">
+            <div class="header_left">
+                <a href="../index.html">
+                    <div class="logo_img"></div>
+                </a>
+                <a href="../index.html" class="brand_name">Roomly</a>
+                <input type="search" placeholder="검색어를 입력해주세요.">
+                <div class="zoom_img"></div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="#">
+                        <div class="shopping_cart_img"></div>
+                    </a></li>
+                    <li><a href="../login.html">로그인</a></li>
+                    <li><a href="../sign_up.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- header -->
+
+    <div class="gnb_outer">
+        <nav class="gnb">
+            <ul class="gnb_left">
+                <li class="gnb_btn">카테고리</li>
+                <li><a href="../sub_page/sub_page.html">특가 상품</a></li>
+                <li><a href="../sub_page/sub_page.html">신상품</a></li>
+                <li><a href="../sub_page/sub_page.html">사용자 리뷰</a></li>
+                <li><a href="../sub_page/sub_page.html">베스트</a></li>
+                <li><a href="../sub_page/sub_page.html">인테리어 태그</a></li>
+                <li><a href="../sub_page/sub_page.html">추천상품</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="rank_slide">
+                    <div class="rank_wrap">
+                        <p>1</p>
+                        <div class="arrow_img"></div>
+                        <p>반타원 테이블</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>2</p>
+                        <p class="new">NEW</p>
+                        <p>3단 선반</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>3</p>
+                        <div class="down_arrow_img"></div>
+                        <p>솜이불 세트</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>4</p>
+                        <div class="arrow_img"></div>
+                        <p>도어커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>5</p>
+                        <div class="arrow_img"></div>
+                        <p>2인용 소파</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>6</p>
+                        <div class="arrow_img"></div>
+                        <p>붙이는 커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>7</p>
+                        <p class="new">NEW</p>
+                        <p>펜트리 수납장</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>8</p>
+                        <div class="down_arrow_img"></div>
+                        <p>1인용 식탁</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>9</p>
+                        <p class="new">NEW</p>
+                        <p>접이식 의자</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>10</p>
+                        <div class="down_arrow_img"></div>
+                        <p>원형 테이블</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rank_modal">
+                <h3>인기검색어</h3>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>1</p>
+                    <div class="arrow_img"></div>
+                    <p>반타원 테이블</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>2</p>
+                    <p class="new">NEW</p>
+                    <p>3단 선반</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>3</p>
+                    <div class="down_arrow_img"></div>
+                    <p>솜이불 세트</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>4</p>
+                    <div class="arrow_img"></div>
+                    <p>도어커튼</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>5</p>
+                    <div class="arrow_img"></div>
+                    <p>2인용 소파</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>6</p>
+                    <div class="arrow_img"></div>
+                    <p>붙이는 커튼</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>7</p>
+                    <p class="new">NEW</p>
+                    <p>펜트리 수납장</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>8</p>
+                    <div class="down_arrow_img"></div>
+                    <p>1인용 식탁</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>9</p>
+                    <p class="new">NEW</p>
+                    <p>접이식 의자</p>
+                </a>
+                <a href="../sub_page/sub_page.html" class="rank_wrap">
+                    <p>10</p>
+                    <div class="down_arrow_img"></div>
+                    <p>원형 테이블</p>
+                </a>
+            </div>
+        </nav>  
+    </div>
+
+    <div class="gnb_menu_outer">
+        <div class="gnb_menu">
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="bed_img"></div>
+                </a>
+                <p>침대</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="table_img"></div>
+                </a>
+                <p>테이블ㆍ식탁ㆍ책상</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="sofa_img"></div>
+                </a>
+                <p>소파</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="cabinet_img"></div>
+                </a>
+                <p>수납장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="shelves_img"></div>
+                </a>
+                <p>선반</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="lamp_img"></div>
+                </a>
+                <p>조명</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="chair_img"></div>
+                </a>
+                <p>의자</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="closet_img"></div>
+                </a>
+                <p>옷장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="mirror_img"></div>
+                </a>
+                <p>거울</p>
+            </div>
+            <div class="sub_menu">
+                <a href="../sub_page/sub_page.html">
+                    <div class="partition_img"></div>
+                </a>
+                <p>파티션</p>
+            </div>
+        </div>
+    </div>
+    <!-- gnb -->
+
+    <nav class="breadcrumb">
+        <a href="../index.html">홈</a>
+        <a href="../sub_page/sub_page.html">침대</a>
+        <a href="./detail_page.html">상세 페이지</a>
+    </nav>
+    <!-- breadcrumb -->
+
+    <section class="order_section">
+        <div class="order_left">
+            <div class="product_img_wrap">
+                <div class="sub_img_wrap">
+                    <button class="sub_img_on">
+                        <img src="./images/main01.jpg" alt="">
+                    </button>
+                    <button>
+                        <img src="./images/main02.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./images/main03.png" alt="">
+                    </button>
+                    <button>
+                        <img src="./images/main04.png" alt="">
+                    </button>
+                </div>
+                <div class="main_img_wrap">
+                    <div class="main_img main_img_on">
+                        <img src="./images/main01.jpg" alt="">
+                    </div>
+                    <div class="main_img">
+                        <img src="./images/main02.png" alt="">
+                    </div>
+                    <div class="main_img">
+                        <img src="./images/main03.png" alt="">
+                    </div>
+                    <div class="main_img">
+                        <img src="./images/main04.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <nav class="page_nav">
+                <ul>
+                    <li class="nav_on"><a href="#detail_section">상품정보</a></li>
+                    <li><a href="#review_section">리뷰</a></li>
+                    <li><a href="#qna_section">문의</a></li>
+                    <li><a href="#delivery_section">배송/환불</a></li>
+                </ul>
+            </nav>
+            <!-- page_nav -->
+
+            <div class="detail_box" id="detail_section">
+                <div class="detail_img01">
+                    <img src="./images/detail01.png" alt="">
+                </div>
+                <div class="detail_img02">
+                    <img src="./images/detail02.png" alt="">
+                </div>
+                <div class="detail_img">
+                    <img src="./images/main01.jpg" alt="">
+                </div>
+                <h3 class="detail_bold">침실의 완성,</h3>
+                <h3 class="detail_bold">호텔 스위트룸의 여유를 담다</h3>
+                <p class="detail_txt">매일 머무는 침실을 고급 호텔처럼.<br/>입체적인 템바보드 헤드와 은은한 무드등의 조화로<br/>당신만의 완벽한 휴식을 시작해 보세요.</p>
+                <div class="detail_img">
+                    <img src="./images/main02.png" alt="">
+                </div>
+                <div class="detail_img">
+                    <img src="./images/main03.png" alt="">
+                </div>
+                <h3 class="detail_bold">오직 나를 위한 공간,</h3>
+                <h3 class="detail_bold">다시 만나는 일상의 휴식</h3>
+                <p class="detail_txt">고단했던 하루의 끝,<br/>Roomly가 제안하는 포근한 무드 속에서 깊은 숙면을 경험하세요.<br/>따뜻한 우드 감성이 당신의 밤을 더 특별하게 채워줍니다.</p>
+                <div class="detail_img">
+                    <img src="./images/main04.png" alt="">
+                </div>
+            </div>
+            <!-- detail -->
+
+        </div>
+        <div class="order_right">
+            <p class="product_name">Roomly 와이드 수납 침대 프레임</p>
+            <p class="product_price"><span class="sale">40%</span>690,000원</p>
+            <div class="product_review">
+                <div class="star_img">
+                    <img src="./images/star_icon.png" alt="">
+                </div>
+                <div class="star_img">
+                    <img src="./images/star_icon.png" alt="">
+                </div>
+                <div class="star_img">
+                    <img src="./images/star_icon.png" alt="">
+                </div>
+                <div class="star_img">
+                    <img src="./images/star_icon.png" alt="">
+                </div>
+                <div class="half_star_img">
+                    <img src="./images/half_star.png" alt="">
+                </div>
+                <p>4.8</p>
+                <p class="review_total">리뷰 28,150</p>
+            </div>
+            <div class="delivery">
+                <p class="deli_title">배송</p>
+                <div class="deli_txt">
+                    <p class="deli_bold">배송 상품정보 참고</p>
+                    <p class="deli_txt">선택 상품에 따라 비용이 달라질 수 있습니다.</p>
+                    <p class="deli_txt">도서산간 지역 배송 불가</p>
+                </div>
+            </div>
+            <div class="product_select">
+                <button class="select_btn">상품을 선택해주세요.</button>
+                <ul>
+                    <li data-value="1">슈퍼 싱글 사이즈(SS)</li>
+                    <li data-value="2">퀸(Q)</li>
+                    <li data-value="3">킹(K) / 라지킹(LK)</li>
+                </ul>
+            </div>
+            <div class="select_detail_box">
+                <div class="select_detail">
+                    <p>슈퍼 싱글 사이즈(SS)</p>
+                    <div class="product_qty">
+                        <div class="minus_btn"></div>
+                        <p class="num">1</p>
+                        <div class="plus_btn"></div>
+                    </div>
+                    <h3 class="select_price">원</h3>
+                    <div class="close_img"></div>
+                </div>
+                <div class="select_detail">
+                    <p>퀸(Q)</p>
+                    <div class="product_qty">
+                        <div class="minus_btn"></div>
+                        <p class="num">1</p>
+                        <div class="plus_btn"></div>
+                    </div>
+                    <h3 class="select_price">원</h3>
+                    <div class="close_img"></div>
+                </div>
+                <div class="select_detail">
+                    <p>킹(K) / 라지킹(LK)</p>
+                    <div class="product_qty">
+                        <div class="minus_btn"></div>
+                        <p class="num">1</p>
+                        <div class="plus_btn"></div>
+                    </div>
+                    <h3 class="select_price">원</h3>
+                    <div class="close_img"></div>
+                </div>
+            </div>
+            <div class="order_box">
+                <div class="price_section">
+                    <h3>주문금액</h3>
+                    <h3 class="total_price">0원</h3>
+                </div>
+                <button class="cart_btn">장바구니</button>
+                <button class="buy_btn">바로구매</button>
+            </div>
+        </div>
+    </section>
+    <!-- order_section -->
+
+    <div class="page_nav_outer">
+        <nav class="page_nav">
+            <ul>
+                <li><a href="#detail_section">상품정보</a></li>
+                <li class="nav_on"><a href="#review_section">리뷰</a></li>
+                <li><a href="#qna_section">문의</a></li>
+                <li><a href="#delivery_section">배송/환불</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- review_nav -->
+
+    <div class="review_title">
+        <h3>리뷰</h3>
+        <button class="review_btn">글쓰기</button>
+    </div>
+    <section class="review_box" id="review_section">
+        <div class="review_score_outer">
+            <div class="review_score">
+                <div class="score_left">
+                    <div class="star_img">
+                        <img src="./images/review_star.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/review_star.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/review_star.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/review_star.png" alt="">
+                    </div>
+                    <div class="half_star_img">
+                        <img src="./images/review_half_star.png" alt="">
+                    </div>
+                    <h3>4.8</h3>
+                </div>
+                <div class="score_right">
+                    <ul>
+                        <li>
+                            <p>5점</p>
+                            <div class="five_graph graph"></div>
+                        </li>
+                        <li>
+                            <p>4점</p>
+                            <div class="four_graph graph"></div>
+                        </li>
+                        <li>
+                            <p>3점</p>
+                            <div class="three_graph graph"></div>
+                        </li>
+                        <li>
+                            <p>2점</p>
+                            <div class="two_graph graph"></div>
+                        </li>
+                        <li>
+                            <p>1점</p>
+                            <div class="one_graph graph"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+                <div class="star">
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="review_txt">
+                <p>후기를 읽어보고 또 읽어보고~ 고민하다가 샀는데 너무 마음에 들어요! 실물이 더 예쁘고~ 많이 밝지않다는 후기때문에 고민했는데 전혀요! 진짜 어디에 켜도 분위기가 살아나요! 잘산템!!!</p>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                    <button class="good">도움이 돼요</button>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+                <div class="star">
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="review_txt">
+                <p>후기를 읽어보고 또 읽어보고~ 고민하다가 샀는데 너무 마음에 들어요! 실물이 더 예쁘고~ 많이 밝지않다는 후기때문에 고민했는데 전혀요! 진짜 어디에 켜도 분위기가 살아나요! 잘산템!!!</p>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                    <button class="good">도움이 돼요</button>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+                <div class="star">
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="review_txt">
+                <p>후기를 읽어보고 또 읽어보고~ 고민하다가 샀는데 너무 마음에 들어요! 실물이 더 예쁘고~ 많이 밝지않다는 후기때문에 고민했는데 전혀요! 진짜 어디에 켜도 분위기가 살아나요! 잘산템!!!</p>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                    <button class="good">도움이 돼요</button>
+                </div>
+            </div>
+        </div>
+        <div class="review">
+            <div class="review_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+                <div class="star">
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                    <div class="star_img">
+                        <img src="./images/star_icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="review_txt">
+                <p>후기를 읽어보고 또 읽어보고~ 고민하다가 샀는데 너무 마음에 들어요! 실물이 더 예쁘고~ 많이 밝지않다는 후기때문에 고민했는데 전혀요! 진짜 어디에 켜도 분위기가 살아나요! 잘산템!!!</p>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                    <button class="good">도움이 돼요</button>
+                </div>
+            </div>
+        </div>
+        <!-- review -->
+
+        
+        <nav class="review_pagination">
+            <ul>
+                <li><</li>
+                <li class="bold">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>></li>
+            </ul>
+        </nav>
+    </section>
+
+    <div class="review_overlay">
+        <div class="review_modal">
+            <div class="review_modal_txt">
+                <div class="close_img">
+                    <img src="./images/close_btn.png" alt="">
+                </div>
+                <h3>리뷰 점수</h3>
+                <input type="text" class="review_score" maxlength="3">
+                <h3>리뷰 제목</h3>
+                <input type="text" class="title_txt">
+                <h3>자세한 리뷰를 작성해주세요.</h3>
+                <textarea name="" class="review_txt"></textarea>
+            </div>
+            <button class="review_txt_btn">리뷰 등록하기</button>
+        </div>
+    </div>
+    <!-- review_modal -->
+    
+    <section class="qna_box" id="qna_section">
+        <div class="qna_title">
+            <h3>문의</h3>
+            <button class="qna_btn">글쓰기</button>
+        </div>
+        <div class="qna">
+            <div class="qna_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+            </div>
+            <div class="qna_txt">
+                <div class="txt_left">
+                    <div class="lock_img">
+                        <img src="./images/lock.png" alt="">
+                    </div>
+                    <p>비밀글 입니다.</p>
+                </div>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                </div>
+            </div>
+        </div>
+        <div class="qna">
+            <div class="qna_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+            </div>
+            <div class="qna_txt">
+                <div class="txt_left">
+                    <div class="lock_img">
+                        <img src="./images/lock.png" alt="">
+                    </div>
+                    <p>비밀글 입니다.</p>
+                </div>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                </div>
+            </div>
+        </div>
+        <div class="qna">
+            <div class="qna_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+            </div>
+            <div class="qna_txt">
+                <div class="txt_left">
+                    <div class="lock_img">
+                        <img src="./images/lock.png" alt="">
+                    </div>
+                    <p>비밀글 입니다.</p>
+                </div>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                </div>
+            </div>
+        </div>
+        <div class="qna">
+            <div class="qna_user">
+                <div class="user_img">
+                    <img src="./images/default_user.png" alt="">
+                </div>
+                <div class="user_name">ooo님</div>
+            </div>
+            <div class="qna_txt">
+                <div class="txt_left">
+                    <div class="lock_img">
+                        <img src="./images/lock.png" alt="">
+                    </div>
+                    <p>비밀글 입니다.</p>
+                </div>
+                <div class="txt_right">
+                    <p class="day">2026.01.16</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="qna_pagination">
+            <ul>
+                <li><</li>
+                <li class="bold">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- qna -->
+
+    <div class="qna_overlay">
+        <div class="qna_modal">
+            <div class="qna_modal_txt">
+                <div class="close_img">
+                    <img src="./images/close_btn.png" alt="">
+                </div>
+                <h3>문의 제목</h3>
+                <input type="text" class="title_txt">
+                <h3>문의 내용을 작성해주세요.</h3>
+                <textarea name="" class="qna_txt"></textarea>
+            </div>
+            <button class="qna_txt_btn">문의 등록하기</button>
+        </div>
+    </div>
+    <!-- qna_modal -->
+
+    <section class="delivery_box" id="delivery_section">
+        <h3 class="delivery_title">배송/환불</h3>
+        <div class="delivery">
+            <p class="deli_title">배송</p>
+            <p>오전 9시 이전에 주문하시면 빨리 받아보실 수 있습니다.</p>
+            <p>오전 9시 이후 주문건은 영업일 기준으로 다음 날부터 배송이 시작됩니다.</p>
+        </div>
+        <div class="delivery">
+            <p class="deli_title">반품/교환 요청 가능 기간</p>
+            <p>구매자 단순 변심은 상품 수령 후 7일 이내</p>
+            <p>표시/광고와 상이, 계약내용과 다르게 이행된 경우 상품 수령 후 3개월 이내, 그 사실을 안 날 또는 알 수 있었던 날로부터 30일 이내.
+            둘 중 하나 경과 시 반품/교환 불가</p>
+        </div>
+        <div class="delivery">
+            <p class="deli_title">환불 불가능 사유</p>
+            <ul>
+                <li>반품요청기간이 지난 경우</li>
+                <li>구매자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우</li>
+                <li>포장을 개봉하였으나 포장이 훼손되어 상품가치가 현저히 상실된 경우</li>
+                <li>구매자의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우</li>
+                <li>시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우</li>
+                <li>고객주문 확인 후 상품제작에 들어가는 주문제작상품</li>
+                <li>복제가 가능한 상품 등의 포장을 훼손한 경우</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="quick_menu">
+        <a href="#" class="quick_top">
+            <img src="./images/quick_top.png" alt="">
+        </a>
+        <a href="#footer" class="quick_bottom">
+            <img src="./images/quick_bottom.png" alt="">
+        </a>
+    </div>
+    <!-- quick_menu -->
+
+    <div class="footer_outer" id="footer">
+        <footer class="footer">
+            <div class="customer">
+                <h3>고객센터</h3>
+                <div class="customer_txt">
+                    <div class="customer_left">
+                        <p class="tell">1588-4321</p>
+                        <p class="time">09:00 ~ 18:00</p>
+                    </div>
+                    <div class="customer_right">
+                        <p>평일: 전체 문의 상담</p>
+                        <p>토요일, 공휴일: 배송/주문 관련 상담</p>
+                        <p>일요일: 휴무</p>
+                        <p class="point">카카오톡 상담 (평일 09:00~18:00)</p>
+                        <button>이메일 문의</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <h3>서비스 안내</h3>
+                <div class="footer_nav">
+                    <a href="#">회사소개</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">제휴/광고 문의</a>
+                    <a href="#">채용정보</a>
+                    <a href="#">권리보호센터</a>
+                    <a href="#" class="bold">개인정보처리방침</a>
+                    <a href="#">상품광고 안내</a>
+                </div>
+            </div>
+            <div class="company_info">
+                <div class="company_top">
+                    <div class="logo_img"></div>
+                    <h3>Roomly</h3>
+                </div>
+                <p class="company_txt">(주)룸리(Roomly) | 대표 이은솔 | 서울특별시 마포구 월드컵북로 402, 15층 |contact@roomly.co.kr |</p>
+                <p class="company_txt">사업자등록번호 123-45-67890 | 사업자정보확인 | 통신판매업신고번호 제2026-서울마포-0123호</p>
+                <p class="copyright">Copyright © Roomly. All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!-- footer -->
+</body>
+</html>

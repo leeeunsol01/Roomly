@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roomly</title>
+    <link rel="shortcut icon" href="./images/Roomly.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/sub_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <script src="./js/sub_page.js"></script>
+</head>
+<body>
+    <div class="header_outer">
+        <header class="header">
+            <div class="header_left">
+                <a href="../index.html">
+                    <div class="logo_img"></div>
+                </a>
+                <a href="../index.html" class="brand_name">Roomly</a>
+                <input type="search" placeholder="검색어를 입력해주세요.">
+                <div class="zoom_img"></div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="#">
+                        <div class="shopping_cart_img"></div>
+                    </a></li>
+                    <li><a href="../login.html">로그인</a></li>
+                    <li><a href="../sign_up.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- header -->
+
+    <div class="gnb_outer">
+        <nav class="gnb">
+            <ul class="gnb_left">
+                <li class="gnb_btn">카테고리</li>
+                <li><a href="./sub_page.html">특가 상품</a></li>
+                <li><a href="./sub_page.html">신상품</a></li>
+                <li><a href="./sub_page.html">사용자 리뷰</a></li>
+                <li><a href="./sub_page.html">베스트</a></li>
+                <li><a href="./sub_page.html">인테리어 태그</a></li>
+                <li><a href="./sub_page.html">추천상품</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="rank_slide">
+                    <div class="rank_wrap">
+                        <p>1</p>
+                        <div class="arrow_img"></div>
+                        <p>반타원 테이블</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>2</p>
+                        <p class="new">NEW</p>
+                        <p>3단 선반</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>3</p>
+                        <div class="down_arrow_img"></div>
+                        <p>솜이불 세트</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>4</p>
+                        <div class="arrow_img"></div>
+                        <p>도어커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>5</p>
+                        <div class="arrow_img"></div>
+                        <p>2인용 소파</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>6</p>
+                        <div class="arrow_img"></div>
+                        <p>붙이는 커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>7</p>
+                        <p class="new">NEW</p>
+                        <p>펜트리 수납장</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>8</p>
+                        <div class="down_arrow_img"></div>
+                        <p>1인용 식탁</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>9</p>
+                        <p class="new">NEW</p>
+                        <p>접이식 의자</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>10</p>
+                        <div class="down_arrow_img"></div>
+                        <p>원형 테이블</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rank_modal">
+                <h3>인기검색어</h3>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>1</p>
+                    <div class="arrow_img"></div>
+                    <p>반타원 테이블</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>2</p>
+                    <p class="new">NEW</p>
+                    <p>3단 선반</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>3</p>
+                    <div class="down_arrow_img"></div>
+                    <p>솜이불 세트</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>4</p>
+                    <div class="arrow_img"></div>
+                    <p>도어커튼</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>5</p>
+                    <div class="arrow_img"></div>
+                    <p>2인용 소파</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>6</p>
+                    <div class="arrow_img"></div>
+                    <p>붙이는 커튼</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>7</p>
+                    <p class="new">NEW</p>
+                    <p>펜트리 수납장</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>8</p>
+                    <div class="down_arrow_img"></div>
+                    <p>1인용 식탁</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>9</p>
+                    <p class="new">NEW</p>
+                    <p>접이식 의자</p>
+                </a>
+                <a href="./sub_page.html" class="rank_wrap">
+                    <p>10</p>
+                    <div class="down_arrow_img"></div>
+                    <p>원형 테이블</p>
+                </a>
+            </div>
+        </nav>  
+    </div>
+
+    <div class="gnb_menu_outer">
+        <div class="gnb_menu">
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="bed_img"></div>
+                </a>
+                <p>침대</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="table_img"></div>
+                </a>
+                <p>테이블ㆍ식탁ㆍ책상</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="sofa_img"></div>
+                </a>
+                <p>소파</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="cabinet_img"></div>
+                </a>
+                <p>수납장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="shelves_img"></div>
+                </a>
+                <p>선반</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="lamp_img"></div>
+                </a>
+                <p>조명</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="chair_img"></div>
+                </a>
+                <p>의자</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="closet_img"></div>
+                </a>
+                <p>옷장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="mirror_img"></div>
+                </a>
+                <p>거울</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page.html">
+                    <div class="partition_img"></div>
+                </a>
+                <p>파티션</p>
+            </div>
+        </div>
+    </div>
+    <!-- gnb -->
+
+    <nav class="breadcrumb">
+        <a href="../index.html">홈</a>
+        <a href="./sub_page.html">침대</a>
+    </nav>
+    <!-- breadcrumb -->
+
+    <section class="most_view_item_wrap">
+        <h3>많이 본 상품</h3>
+        <div class="swiper most_view_item_box">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item second">
+                        <div class="product_img">
+                            <img src="../images/bed01.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">패브릭 호텔식 침대프레임</p>
+                            <p class="product_price"><span class="sale">50%</span>199,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 11,320</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item third">
+                        <div class="product_img">
+                            <img src="../images/bed07.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">호텔식 구름같은 침대프레임</p>
+                            <p class="product_price"><span class="sale">8%</span>399,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 39,320</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item">
+                        <div class="product_img">
+                            <img src="../images/bed09.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">평상형 호텔 침대프레임</p>
+                            <p class="product_price"><span class="sale">45%</span>269,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.7</p>
+                                <p class="review_num">리뷰 25,110</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item">
+                        <div class="product_img">
+                            <img src="../images/bed36.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">무헤드 블랙 저상형 침대 프레임</p>
+                            <p class="product_price"><span class="sale">10%</span>680,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">5</p>
+                                <p class="review_num">리뷰 12,200</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item">
+                        <div class="product_img">
+                            <img src="../images/bed33.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">블랙 고급 침대 프레임</p>
+                            <p class="product_price"><span class="sale">42%</span>1,450,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">5</p>
+                                <p class="review_num">리뷰 8,290</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item">
+                        <div class="product_img">
+                            <img src="../images/bed25.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">아이보리 패브릭 호텔 침대 프레임</p>
+                            <p class="product_price"><span class="sale">51%</span>149,900원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.7</p>
+                                <p class="review_num">리뷰 14,570</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item">
+                        <div class="product_img">
+                            <img src="../images/bed22.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">고무나무 원목 침대 프레임</p>
+                            <p class="product_price"><span class="sale">54%</span>189,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.5</p>
+                                <p class="review_num">리뷰 19,270</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item">
+                        <div class="product_img">
+                            <img src="../images/bed47.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">컴포트 패브릭 평상형 침대프레임</p>
+                            <p class="product_price"><span class="sale">48%</span>286,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.7</p>
+                                <p class="review_num">리뷰 24,400</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item">
+                        <div class="product_img">
+                            <img src="../images/bed49.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">원목 조명 수납형 침대 프레임</p>
+                            <p class="product_price"><span class="sale">5%</span>849,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.9</p>
+                                <p class="review_num">리뷰 4,880</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide most_item_wrap">
+                    <a href="../detail_page/detail_page.html" class="most_item first">
+                        <div class="product_img">
+                            <img src="../images/main01.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">Roomly 와이드 수납 침대 프레임</p>
+                            <p class="product_price"><span class="sale">40%</span>690,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 28,150</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="most_item-next"></div>
+        <div class="most_item-prev"></div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".most_view_item_box", {
+            loop:true,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            loopedSlides: 10,
+            centeredSlides: true,
+            simulateTouch: false,
+            navigation: {
+                nextEl: ".most_item-next",
+                prevEl: ".most_item-prev",
+            },
+        });
+    </script>
+    <!-- most_view_item -->
+
+    <section class="sub_product_box">
+        <p class="product_total">상품 수 24개</p>
+        <div class="sub_product">
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/main01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">Roomly 와이드 수납 침대 프레임</p>
+                    <p class="product_price"><span class="sale">40%</span>690,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 28,150</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed12.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">원목 수납 침대프레임</p>
+                    <p class="product_price"><span class="sale">37%</span>359,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 15,210</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed13.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">초슬림 저상형 침대 프레임</p>
+                    <p class="product_price"><span class="sale">34%</span>77,800원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 17,320</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed14.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">베이직 우드 침대 프레임</p>
+                    <p class="product_price"><span class="sale">45%</span>296,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 20,010</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed16.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">호텔식 평상형 침대 프레임</p>
+                    <p class="product_price"><span class="sale">44%</span>189,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 18,550</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed17.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">모던 회색톤 호텔식 침대 프레임</p>
+                    <p class="product_price"><span class="sale">49%</span>1,096,200원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 22,780</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed19.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">챠콜 패브릭 호텔식 침대프레임</p>
+                    <p class="product_price"><span class="sale">52%</span>259,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 25,120</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed21.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">슬림 저상형 침대 프레임</p>
+                    <p class="product_price"><span class="sale">9%</span>389,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 12,290</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed22.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">고무나무 원목 침대 프레임</p>
+                    <p class="product_price"><span class="sale">54%</span>189,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.5</p>
+                        <p class="review_num">리뷰 19,270</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed25.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">아이보리 패브릭 호텔 침대 프레임</p>
+                    <p class="product_price"><span class="sale">51%</span>149,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 14,570</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed31.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">호텔 패브릭 침대 프레임(매트포함)</p>
+                    <p class="product_price"><span class="sale">70%</span>319,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 10,400</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed33.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">블랙 고급 침대 프레임</p>
+                    <p class="product_price"><span class="sale">42%</span>1,450,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">5</p>
+                        <p class="review_num">리뷰 8,290</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed35.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">참죽나무 원목 평상형 침대 프레임</p>
+                    <p class="product_price"><span class="sale">62%</span>369,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 14,800</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed36.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">무헤드 블랙 저상형 침대 프레임</p>
+                    <p class="product_price"><span class="sale">10%</span>680,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">5</p>
+                        <p class="review_num">리뷰 12,200</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed37.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">무헤드 침대 프레임(매트포함)</p>
+                    <p class="product_price"><span class="sale">33%</span>670,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 5,300</p>
+                    </div>
+                </div>
+            </a>
+            <a href="../detail_page/detail_page.html" class="product_item">
+                <div class="product_img">
+                    <img src="../images/bed01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">패브릭 호텔식 침대프레임</p>
+                    <p class="product_price"><span class="sale">50%</span>199,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 11,320</p>
+                    </div>
+                </div>
+            </a>  
+        </div>
+        <button class="more">더보기</button>
+        <div class="more_product">
+            <div class="more_wrap">
+                <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed07.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">호텔식 구름같은 침대프레임</p>
+                        <p class="product_price"><span class="sale">8%</span>399,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.8</p>
+                            <p class="review_num">리뷰 39,320</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed09.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">평상형 호텔 침대프레임</p>
+                        <p class="product_price"><span class="sale">45%</span>269,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.7</p>
+                            <p class="review_num">리뷰 25,110</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed11.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">평상형 호텔 침대프레임</p>
+                        <p class="product_price"><span class="sale">28%</span>179,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.6</p>
+                            <p class="review_num">리뷰 8,950</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed39.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">프리미엄 패브릭 침대 프레임</p>
+                        <p class="product_price"><span class="sale">25%</span>299,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.7</p>
+                            <p class="review_num">리뷰 13,350</p>
+                        </div>
+                    </div>
+                </a>
+                    <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed42.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">초 슬림 수납형 침대 프레임</p>
+                        <p class="product_price"><span class="sale">33%</span>369,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.9</p>
+                            <p class="review_num">리뷰 37,010</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed45.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">패브릭 침대 프레임(매트포함)</p>
+                        <p class="product_price"><span class="sale">28%</span>570,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.8</p>
+                            <p class="review_num">리뷰 26,650</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed47.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">컴포트 패브릭 평상형 침대프레임</p>
+                        <p class="product_price"><span class="sale">48%</span>286,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.7</p>
+                            <p class="review_num">리뷰 24,400</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="../detail_page/detail_page.html" class="product_item">
+                    <div class="product_img">
+                        <img src="../images/bed49.jpg" alt="">
+                    </div>
+                    <div class="bookmark_img"></div>
+                    <div class="product_txt">
+                        <p class="product_name">원목 조명 수납형 침대 프레임</p>
+                        <p class="product_price"><span class="sale">5%</span>849,000원</p>
+                        <div class="review">
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_score">4.9</p>
+                            <p class="review_num">리뷰 4,880</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="quick_menu">
+        <a href="#" class="quick_top">
+            <img src="./images/quick_top.png" alt="">
+        </a>
+        <a href="#footer" class="quick_bottom">
+            <img src="./images/quick_bottom.png" alt="">
+        </a>
+    </div>
+    <!-- quick_menu -->
+
+    <div class="footer_outer" id="footer">
+        <footer class="footer">
+            <div class="customer">
+                <h3>고객센터</h3>
+                <div class="customer_txt">
+                    <div class="customer_left">
+                        <p class="tell">1588-4321</p>
+                        <p class="time">09:00 ~ 18:00</p>
+                    </div>
+                    <div class="customer_right">
+                        <p>평일: 전체 문의 상담</p>
+                        <p>토요일, 공휴일: 배송/주문 관련 상담</p>
+                        <p>일요일: 휴무</p>
+                        <p class="point">카카오톡 상담 (평일 09:00~18:00)</p>
+                        <button>이메일 문의</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <h3>서비스 안내</h3>
+                <div class="footer_nav">
+                    <a href="#">회사소개</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">제휴/광고 문의</a>
+                    <a href="#">채용정보</a>
+                    <a href="#">권리보호센터</a>
+                    <a href="#" class="bold">개인정보처리방침</a>
+                    <a href="#">상품광고 안내</a>
+                </div>
+            </div>
+            <div class="company_info">
+                <div class="company_top">
+                    <div class="logo_img"></div>
+                    <h3>Roomly</h3>
+                </div>
+                <p class="company_txt">(주)룸리(Roomly) | 대표 이은솔 | 서울특별시 마포구 월드컵북로 402, 15층 |contact@roomly.co.kr |</p>
+                <p class="company_txt">사업자등록번호 123-45-67890 | 사업자정보확인 | 통신판매업신고번호 제2026-서울마포-0123호</p>
+                <p class="copyright">Copyright © Roomly. All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!-- footer -->
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roomly</title>
+    <link rel="shortcut icon" href="./images/Roomly.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script>
+        $(function(){
+             $('.gnb_btn').on('click', function() {
+                $('.gnb_menu_outer').toggleClass('gnb_open');
+                $('.gnb_btn').toggleClass('gnb_btn_on');
+            });
+            // gnb
+
+            $('.rank_slide').on('click', function (e) {
+                e.stopPropagation();
+                $('.rank_modal').toggleClass('rank_open');
+            });
+
+            $('.rank_modal').on('click', function (e) {
+                e.stopPropagation();
+            });
+
+            $(document).on('click', function () {
+                $('.rank_modal').removeClass('rank_open');
+            });
+            const rankSlide = $('.rank_slide');
+            const rankHeight = 50;
+            const rankSpeed = 1000;
+            const rankDelay = 5000;
+
+            function rankSlideUp(){
+                rankSlide.animate({
+                    top: -rankHeight + 'px'
+                },rankSpeed,
+                    function() {
+                        rankSlide.append(rankSlide.children().first());
+                        rankSlide.css('top', 0);
+                    }
+                );
+            }
+
+            setInterval(rankSlideUp, rankDelay);
+            // rank
+        });
+    </script>
+</head>
+<body>
+    <div class="header_outer">
+        <header class="header">
+            <div class="header_left">
+                <a href="./index.html">
+                    <div class="logo_img"></div>
+                </a>
+                <a href="./index.html" class="brand_name">Roomly</a>
+                <input type="search" placeholder="검색어를 입력해주세요.">
+                <div class="zoom_img"></div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="#">
+                        <div class="shopping_cart_img"></div>
+                    </a></li>
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./sign_up.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- header -->
+
+    <div class="gnb_outer">
+        <nav class="gnb">
+            <ul class="gnb_left">
+                <li class="gnb_btn">카테고리</li>
+                <li><a href="./sub_page/sub_page.html">특가 상품</a></li>
+                <li><a href="./sub_page/sub_page.html">신상품</a></li>
+                <li><a href="./sub_page/sub_page.html">사용자 리뷰</a></li>
+                <li><a href="./sub_page/sub_page.html">베스트</a></li>
+                <li><a href="./sub_page/sub_page.html">인테리어 태그</a></li>
+                <li><a href="./sub_page/sub_page.html">추천상품</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="rank_slide">
+                    <div class="rank_wrap">
+                        <p>1</p>
+                        <div class="arrow_img"></div>
+                        <p>반타원 테이블</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>2</p>
+                        <p class="new">NEW</p>
+                        <p>3단 선반</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>3</p>
+                        <div class="down_arrow_img"></div>
+                        <p>솜이불 세트</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>4</p>
+                        <div class="arrow_img"></div>
+                        <p>도어커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>5</p>
+                        <div class="arrow_img"></div>
+                        <p>2인용 소파</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>6</p>
+                        <div class="arrow_img"></div>
+                        <p>붙이는 커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>7</p>
+                        <p class="new">NEW</p>
+                        <p>펜트리 수납장</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>8</p>
+                        <div class="down_arrow_img"></div>
+                        <p>1인용 식탁</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>9</p>
+                        <p class="new">NEW</p>
+                        <p>접이식 의자</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>10</p>
+                        <div class="down_arrow_img"></div>
+                        <p>원형 테이블</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rank_modal">
+                <h3>인기검색어</h3>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>1</p>
+                    <div class="arrow_img"></div>
+                    <p>반타원 테이블</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>2</p>
+                    <p class="new">NEW</p>
+                    <p>3단 선반</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>3</p>
+                    <div class="down_arrow_img"></div>
+                    <p>솜이불 세트</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>4</p>
+                    <div class="arrow_img"></div>
+                    <p>도어커튼</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>5</p>
+                    <div class="arrow_img"></div>
+                    <p>2인용 소파</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>6</p>
+                    <div class="arrow_img"></div>
+                    <p>붙이는 커튼</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>7</p>
+                    <p class="new">NEW</p>
+                    <p>펜트리 수납장</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>8</p>
+                    <div class="down_arrow_img"></div>
+                    <p>1인용 식탁</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>9</p>
+                    <p class="new">NEW</p>
+                    <p>접이식 의자</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>10</p>
+                    <div class="down_arrow_img"></div>
+                    <p>원형 테이블</p>
+                </a>
+            </div>
+        </nav>  
+    </div>
+
+    <div class="gnb_menu_outer">
+        <div class="gnb_menu">
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="bed_img"></div>
+                </a>
+                <p>침대</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="table_img"></div>
+                </a>
+                <p>테이블ㆍ식탁ㆍ책상</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="sofa_img"></div>
+                </a>
+                <p>소파</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="cabinet_img"></div>
+                </a>
+                <p>수납장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="shelves_img"></div>
+                </a>
+                <p>선반</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="lamp_img"></div>
+                </a>
+                <p>조명</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="chair_img"></div>
+                </a>
+                <p>의자</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="closet_img"></div>
+                </a>
+                <p>옷장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="mirror_img"></div>
+                </a>
+                <p>거울</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="partition_img"></div>
+                </a>
+                <p>파티션</p>
+            </div>
+        </div>
+    </div>
+    <!-- gnb -->
+
+    <nav class="breadcrumb">
+        <a href="./index.html">홈</a>
+        <a href="./login.html">로그인</a>
+    </nav>
+    <!-- breadcrumb -->
+
+    <section class="login">
+        <div class="login_top">
+            <input type="text" name="id" id="user_id" placeholder="아이디" maxlength="16" minlength="4" required autofocus>
+            <input type="password" id="user_pw" placeholder="비밀번호" maxlength="16" minlength="10" required>
+            <button type="button" class="login_btn">로그인</button>
+        </div>
+        <div class="login_bottom">
+            <ul>
+                <li><a href="./find_id_pw.html">아이디 찾기</a></li>
+                <li><a href="./find_id_pw.html">비밀번호 찾기</a></li>
+            </ul>
+            <a href="./sign_up.html">회원가입</a>
+        </div>
+    </section>
+    <!-- login -->
+
+        <div class="quick_menu">
+        <a href="#" class="quick_top">
+            <img src="./images/quick_top.png" alt="">
+        </a>
+        <a href="#footer" class="quick_bottom">
+            <img src="./images/quick_bottom.png" alt="">
+        </a>
+    </div>
+    <!-- quick_menu -->
+
+    <div class="footer_outer" id="footer">
+        <footer class="footer">
+            <div class="customer">
+                <h3>고객센터</h3>
+                <div class="customer_txt">
+                    <div class="customer_left">
+                        <p class="tell">1588-4321</p>
+                        <p class="time">09:00 ~ 18:00</p>
+                    </div>
+                    <div class="customer_right">
+                        <p>평일: 전체 문의 상담</p>
+                        <p>토요일, 공휴일: 배송/주문 관련 상담</p>
+                        <p>일요일: 휴무</p>
+                        <p class="point">카카오톡 상담 (평일 09:00~18:00)</p>
+                        <button>이메일 문의</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <h3>서비스 안내</h3>
+                <div class="footer_nav">
+                    <a href="#">회사소개</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">제휴/광고 문의</a>
+                    <a href="#">채용정보</a>
+                    <a href="#">권리보호센터</a>
+                    <a href="#" class="bold">개인정보처리방침</a>
+                    <a href="#">상품광고 안내</a>
+                </div>
+            </div>
+            <div class="company_info">
+                <div class="company_top">
+                    <div class="logo_img"></div>
+                    <h3>Roomly</h3>
+                </div>
+                <p class="company_txt">(주)룸리(Roomly) | 대표 이은솔 | 서울특별시 마포구 월드컵북로 402, 15층 |contact@roomly.co.kr |</p>
+                <p class="company_txt">사업자등록번호 123-45-67890 | 사업자정보확인 | 통신판매업신고번호 제2026-서울마포-0123호</p>
+                <p class="copyright">Copyright © Roomly. All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!-- footer -->
+</body>
+</html>

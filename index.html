@@ -1,0 +1,2144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roomly</title>
+    <link rel="shortcut icon" href="./images/Roomly.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <a href="#">첫 구매 <span class="banner_point">할인 이벤트</span></a>
+        <div class="close_img"></div>
+    </div>
+    <!-- banner -->
+
+    <div class="header_outer">
+        <header class="header">
+            <div class="header_left">
+                <a href="./index.html">
+                    <div class="logo_img"></div>
+                </a>
+                <a href="./index.html" class="brand_name">Roomly</a>
+                <input type="search" placeholder="검색어를 입력해주세요.">
+                <div class="zoom_img"></div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="#">
+                        <div class="shopping_cart_img"></div>
+                    </a></li>
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./sign_up.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- header -->
+
+    <div class="gnb_outer">
+        <nav class="gnb">
+            <ul class="gnb_left">
+                <li class="gnb_btn">카테고리</li>
+                <li><a href="./sub_page/sub_page.html">특가 상품</a></li>
+                <li><a href="./sub_page/sub_page.html">신상품</a></li>
+                <li><a href="./sub_page/sub_page.html">사용자 리뷰</a></li>
+                <li><a href="./sub_page/sub_page.html">베스트</a></li>
+                <li><a href="./sub_page/sub_page.html">인테리어 태그</a></li>
+                <li><a href="./sub_page/sub_page.html">추천상품</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="rank_slide">
+                    <div class="rank_wrap">
+                        <p>1</p>
+                        <div class="arrow_img"></div>
+                        <p>반타원 테이블</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>2</p>
+                        <p class="new">NEW</p>
+                        <p>3단 선반</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>3</p>
+                        <div class="down_arrow_img"></div>
+                        <p>솜이불 세트</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>4</p>
+                        <div class="arrow_img"></div>
+                        <p>도어커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>5</p>
+                        <div class="arrow_img"></div>
+                        <p>2인용 소파</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>6</p>
+                        <div class="arrow_img"></div>
+                        <p>붙이는 커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>7</p>
+                        <p class="new">NEW</p>
+                        <p>펜트리 수납장</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>8</p>
+                        <div class="down_arrow_img"></div>
+                        <p>1인용 식탁</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>9</p>
+                        <p class="new">NEW</p>
+                        <p>접이식 의자</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>10</p>
+                        <div class="down_arrow_img"></div>
+                        <p>원형 테이블</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rank_modal">
+                <h3>인기검색어</h3>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>1</p>
+                    <div class="arrow_img"></div>
+                    <p>반타원 테이블</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>2</p>
+                    <p class="new">NEW</p>
+                    <p>3단 선반</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>3</p>
+                    <div class="down_arrow_img"></div>
+                    <p>솜이불 세트</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>4</p>
+                    <div class="arrow_img"></div>
+                    <p>도어커튼</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>5</p>
+                    <div class="arrow_img"></div>
+                    <p>2인용 소파</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>6</p>
+                    <div class="arrow_img"></div>
+                    <p>붙이는 커튼</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>7</p>
+                    <p class="new">NEW</p>
+                    <p>펜트리 수납장</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>8</p>
+                    <div class="down_arrow_img"></div>
+                    <p>1인용 식탁</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>9</p>
+                    <p class="new">NEW</p>
+                    <p>접이식 의자</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>10</p>
+                    <div class="down_arrow_img"></div>
+                    <p>원형 테이블</p>
+                </a>
+            </div>
+        </nav>  
+    </div>
+
+    <div class="gnb_menu_outer">
+        <div class="gnb_menu">
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="bed_img"></div>
+                </a>
+                <p>침대</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="table_img"></div>
+                </a>
+                <p>테이블ㆍ식탁ㆍ책상</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="sofa_img"></div>
+                </a>
+                <p>소파</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="cabinet_img"></div>
+                </a>
+                <p>수납장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="shelves_img"></div>
+                </a>
+                <p>선반</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="lamp_img"></div>
+                </a>
+                <p>조명</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="chair_img"></div>
+                </a>
+                <p>의자</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="closet_img"></div>
+                </a>
+                <p>옷장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="mirror_img"></div>
+                </a>
+                <p>거울</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="partition_img"></div>
+                </a>
+                <p>파티션</p>
+            </div>
+        </div>
+    </div>
+    <!-- gnb -->
+
+    <div class="main_visual_wrap">
+        <div class="swiper main_visual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide visual_img">
+                    <img src="./images/banner05.png" alt="">
+                </div>
+                <div class="swiper-slide visual_img">
+                    <img src="./images/banner02.png" alt="">
+                </div>
+                <div class="swiper-slide visual_img">
+                    <img src="./images/banner03.png" alt="">
+                </div>
+                <div class="swiper-slide visual_img">
+                    <img src="./images/banner01.png" alt="">
+                </div>
+                <div class="swiper-slide visual_img">
+                    <img src="./images/banner04.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main_visual-next"></div>
+        <div class="main_visual-prev"></div>
+        <div class="main_visual-pagination"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".main_visual", {
+            loop:true,
+            simulateTouch: false,
+            autoplay:{
+                delay: 8000,
+                disableOnInteraction: false,
+            },
+        pagination: {
+            el: ".main_visual-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".main_visual-next",
+            prevEl: ".main_visual-prev",
+        },
+        });
+    </script>
+    <!-- main_visual -->
+
+    <div class="metapho_box">
+        <div class="metapho">
+            <a href="#">
+                <div class="check_img"></div>
+            </a>
+            <p>출석 체크</p>
+        </div>
+        <div class="metapho">
+            <a href="./sub_page/sub_page.html">
+                <div class="coupon_img"></div>
+            </a>
+            <p>쿠폰</p>
+        </div>
+        <div class="metapho">
+            <a href="./sub_page/sub_page.html">
+                <div class="package_img"></div>
+            </a>
+            <p>할인 패키지</p>
+        </div>
+        <div class="metapho">
+            <a href="./sub_page/sub_page.html">
+                <div class="review_img"></div>
+            </a>
+            <p>사용자 리뷰</p>
+        </div>
+        <div class="metapho">
+            <a href="./sub_page/sub_page.html">
+                <div class="moving_img"></div>
+            </a>
+            <p>입주 필수템</p>
+        </div>
+        <div class="metapho">
+            <a href="./sub_page/sub_page.html">
+                <div class="idea_img"></div>
+            </a>
+            <p>자취 꿀팁</p>
+        </div>
+    </div>
+    <!-- metapho -->
+
+    <section class="sale_item_wrap">
+        <div class="swiper sale_item_box">
+            <h3>특가 상품</h3>
+            <a href="./sub_page/sub_page.html" class="point">더보기</a>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide product_wrap">
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/main01.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">Roomly 와이드 수납 침대 프레임</p>
+                            <p class="product_price"><span class="sale">40%</span>690,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 28,150</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/table11.png" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">모던 우드 거실 테이블</p>
+                            <p class="product_price"><span class="sale">30%</span>209,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.7</p>
+                                <p class="review_num">리뷰 18,290</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/cabinet11.png" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">모던 에센셜 거실 수납장</p>
+                            <p class="product_price"><span class="sale">20%</span>319,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 28,320</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/lamp04.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">무드등 조명</p>
+                            <p class="product_price"><span class="sale">48%</span>24,900원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.9</p>
+                                <p class="review_num">리뷰 10,090</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide product_wrap">
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/cabinet05.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">4칸 서랍장 블랙</p>
+                            <p class="product_price"><span class="sale">47%</span>109,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 25,310</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/mirror08.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">금장 프렌치 엔틱 벽거울</p>
+                            <p class="product_price"><span class="sale">39%</span>29,900원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.5</p>
+                                <p class="review_num">리뷰 15,250</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/sofa03.jpg" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">패브릭 1인용 소파</p>
+                            <p class="product_price"><span class="sale">45%</span>109,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.6</p>
+                                <p class="review_num">리뷰 31,320</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./detail_page/detail_page.html" class="sale_item">
+                        <div class="product_img">
+                            <img src="./images/partition10 1.png" alt="">
+                        </div>
+                        <div class="bookmark_img"></div>
+                        <div class="product_txt">
+                            <p class="product_name">철제 파티션/ 칸막이</p>
+                            <p class="product_price"><span class="sale">39%</span>48,770원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 19,990</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sale_item-next"></div>
+        <div class="sale_item-prev"></div>
+    </section>
+    <script>
+        function toggleButtons(swiper, prevBtnSelector, nextBtnSelector) {
+            const prevBtn = document.querySelector(prevBtnSelector);
+            const nextBtn = document.querySelector(nextBtnSelector);
+
+            if (!prevBtn || !nextBtn) return;
+
+            prevBtn.style.opacity = swiper.isBeginning ? 0 : 1;
+            prevBtn.style.pointerEvents = swiper.isBeginning ? "none" : "auto";
+
+            nextBtn.style.opacity = swiper.isEnd ? 0 : 1;
+            nextBtn.style.pointerEvents = swiper.isEnd ? "none" : "auto";
+        }
+
+        var saleSwiper = new Swiper(".sale_item_box", {
+            simulateTouch: false,
+            navigation: {
+                nextEl: ".sale_item-next",
+                prevEl: ".sale_item-prev",
+            },
+            on: {
+                init: function() {
+                    toggleButtons(this, ".sale_item-prev", ".sale_item-next");
+                },
+                slideChange: function() {
+                    toggleButtons(this, ".sale_item-prev", ".sale_item-next");
+                }
+            }
+        });
+    </script>
+    <!-- sale_item -->
+
+    <section class="new_item_box">
+        <h3>신상품</h3>
+        <div class="new_item_wrap">
+            <a href="./sub_page/sub_page.html" class="new_item_left">
+                <img src="./images/new_item01.png" alt="">
+            </a>
+            <a href="./sub_page/sub_page.html" class="new_item_top_left">
+                <h3>모든 신제품<br /> 보러가기</h3>
+            </a>
+            <a href="./sub_page/sub_page.html" class="new_item_top_right">
+                <img src="./images/new_item02.png" alt="">
+            </a>
+            <a href="./sub_page/sub_page.html" class="new_item_bottom">
+                <img src="./images/new_item03.png" alt="">
+            </a>
+        </div>
+    </section>
+    <!-- new_item -->
+
+    <div class="user_review_title">
+        <h3>사용자 리뷰</h3>
+        <a href="./sub_page/sub_page.html" class="point">더보기</a>
+    </div>
+    <section class="user_review_outer">
+        <div class="user_review_box">
+            <div class="user_review_slide">
+                <div class="user_review">
+                    <a href="#" class="review_left">
+                        <div class="product_img">
+                            <img src="./images/lamp01.jpg" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">동그라미 스탠드 무드등</p>
+                            <p class="product_price"><span class="sale">9%</span>29,900원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.7</p>
+                                <p class="review_num">리뷰 12,110</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.15</p>
+                        </div>
+                        <p class="review_txt">
+                            후기를 읽어보고 또 읽어보고~ 고민하다가 샀는데 너무 마음에 들어요! 실물이 더 예쁘고~ 많이 밝지않다는 후기때문에 고민했는데 전혀요! 진짜 어디에 켜도 분위기가 살아나요! 잘산템!!!
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="user_review">
+                    <div class="review_left">
+                        <div class="product_img">
+                            <img src="./images/mirror10.jpg" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">심플 원형 벽거울</p>
+                            <p class="product_price"><span class="sale">28%</span>49,900원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.6</p>
+                                <p class="review_num">리뷰 10,210</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.12</p>
+                        </div>
+                        <p class="review_txt">
+                            고민하다가 구매했는데, 진짜 왜 고민했나 싶어요!
+                            사진보다 실물이 훨씬 예쁘고, 심플한데도 존재감이 딱 있어요.
+                            밝기 얘기 때문에 살짝 걱정했는데 전혀 어둡지 않고 오히려 분위기가 너무 좋아요.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="user_review">
+                    <div class="review_left">
+                        <div class="product_img">
+                            <img src="./images/shelves01.jpg" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">2단 트롤리 레드</p>
+                            <p class="product_price"><span class="sale">18%</span>52,900원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.4</p>
+                                <p class="review_num">리뷰 29,300</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.18</p>
+                        </div>
+                        <p class="review_txt">
+                            색감에 반해서 구매했는데 실물 레드 컬러가 진짜 예뻐요!
+                            쨍하지 않고 포인트 주기 딱 좋은 색이라 인테리어 효과도 좋아요.
+                            조립도 생각보다 간단했고 바퀴가 부드럽게 잘 굴러가서 이동하기 편해요.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="user_review">
+                    <div class="review_left">
+                        <div class="product_img">
+                            <img src="./images/table11.png" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">모던 우드 거실 테이블</p>
+                            <p class="product_price"><span class="sale">30%</span>209,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.7</p>
+                                <p class="review_num">리뷰 18,290</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.12</p>
+                        </div>
+                        <p class="review_txt">
+                            모던한 디자인에 따뜻한 우드 톤이라 거실 분위기가 한층 살아납니다.
+                            크기도 적당해서 좁지 않고, 사용하면서 흔들림이나 소음 없이 안정감 있어요.
+                            친구들이 와서도 예쁘다고 다들 칭찬해주고, 관리도 편해서 마음에 쏙 들어요.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="user_review">
+                    <div class="review_left">
+                        <div class="product_img">
+                            <img src="./images/sofa08.jpg" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">1인용 카페 디자인 소파</p>
+                            <p class="product_price"><span class="sale">40%</span>218,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.8</p>
+                                <p class="review_num">리뷰 32,610</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.11</p>
+                        </div>
+                        <p class="review_txt">
+                            작지만 포근하고 앉았을 때 안정감이 있어서 오래 앉아 있어도 편해요.
+                            카페 느낌 나는 디자인 덕분에 집 안 분위기가 한층 세련돼 보여요.
+                            생각보다 색감도 화면 그대로 예쁘고, 소재도 부드럽고 관리하기 편합니다.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="user_review">
+                    <div class="review_left">
+                        <div class="product_img">
+                            <img src="./images/lamp07.jpg" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">침실 단스탠드 조명</p>
+                            <p class="product_price"><span class="sale">65%</span>17,500원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.6</p>
+                                <p class="review_num">리뷰 10,990</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.20</p>
+                        </div>
+                        <p class="review_txt">
+                            조명이 은은해서 침실 분위기를 딱 아늑하게 만들어 줘요.
+                            빛이 너무 밝지 않고 은은해서 책 읽거나 잠들기 전 사용하기 완전 좋습니다.
+                            디자인도 심플하고 모던해서 어떤 침대, 테이블에도 잘 어울려요.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="user_review">
+                    <div class="review_left">
+                        <div class="product_img">
+                            <img src="./images/partition08 1.png" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">접이식 스탠드 이동식 칸막이</p>
+                            <p class="product_price"><span class="sale">39%</span>40,000원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.9</p>
+                                <p class="review_num">리뷰 35,910</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.18</p>
+                        </div>
+                        <p class="review_txt">
+                            후기 보고 고민 끝에 구매했는데, 진짜 기대 이상이에요!
+                            접이식이라 필요할 때 바로 세우고 접을 수 있어 공간 활용이 정말 편리합니다.
+                            무겁지 않고 바퀴도 부드럽게 굴러서 이동도 쉽고, 집안 어디에 두어도 깔끔하게 어울려요.
+                        </p>
+                    </div>
+                </a>
+                <a href="#" class="user_review">
+                    <div class="review_left">
+                        <div class="product_img">
+                            <img src="./images/chair01.jpg" alt="">
+                        </div>
+                        <div class="product_txt">
+                            <p class="product_name">가죽 쿠션 카페 디자인 의자</p>
+                            <p class="product_price"><span class="sale">71%</span>19,900원</p>
+                            <div class="review">
+                                <div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div><div class="star_img">
+                                    <img src="./images/star_icon.png" alt="">
+                                </div>
+                                <div class="half_star_img">
+                                    <img src="./images/half_star.png" alt="">
+                                </div>
+                                <p class="review_score">4.5</p>
+                                <p class="review_num">리뷰 21,550</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review_right">
+                        <div class="top_txt">
+                            <div class="user_img"></div>
+                            <p class="user_name">ooo님</p>
+                            <div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div><div class="star_img">
+                                <img src="./images/star_icon.png" alt="">
+                            </div>
+                            <p class="review_day">2026.01.09</p>
+                        </div>
+                        <p class="review_txt">
+                            쿠션감이 적당해서 앉았을 때 편안하고, 오래 앉아도 불편하지 않아요.
+                            가죽 소재라 관리도 쉽고, 카페 느낌 나는 디자인 덕분에 집 안 분위기가 한층 세련돼 보여요.
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- user_review -->
+
+    <section class="best_item_box">
+        <h3>베스트</h3>
+        <a href="./sub_page/sub_page.html" class="point">더보기</a>
+        <div class="best_item_tab">
+            <button class="best_tab_on">침대</button>
+            <button>테이블ㆍ식탁ㆍ책상</button>
+            <button>소파</button>
+            <button>수납장</button>
+            <button>선반</button>
+            <button>조명</button>
+            <button>의자</button>
+            <button>옷장</button>
+            <button>거울</button>
+            <button>파티션</button>
+        </div>
+        <div class="best_item_wrap best_sheet_on">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/main01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">Roomly 와이드 수납 침대 프레임</p>
+                    <p class="product_price"><span class="sale">40%</span>690,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 28,150</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/bed01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">패브릭 호텔식 침대프레임</p>
+                    <p class="product_price"><span class="sale">50%</span>199,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 11,320</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/bed07.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">호텔식 구름같은 침대프레임</p>
+                    <p class="product_price"><span class="sale">8%</span>399,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 39,320</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/bed09.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">평상형 호텔 침대프레임</p>
+                    <p class="product_price"><span class="sale">45%</span>269,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 25,110</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- bed -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/table02.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">원형 식탁 테이블</p>
+                    <p class="product_price"><span class="sale">62%</span>85,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 21,020</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/table11.png" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">모던 우드 거실 테이블</p>
+                    <p class="product_price"><span class="sale">30%</span>209,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 18,290</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/table09.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">모던 멀티 컴퓨터 책상</p>
+                    <p class="product_price"><span class="sale">23%</span>157,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 13,440</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/table10.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">원목 데스크 책상</p>
+                    <p class="product_price"><span class="sale">34%</span>148,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 38,790</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- table -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/sofa03.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">패브릭 1인용 소파</p>
+                    <p class="product_price"><span class="sale">45%</span>109,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 31,320</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/sofa08.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">1인용 카페 디자인 소파</p>
+                            <p class="product_price"><span class="sale">40%</span>218,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 32,610</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/sofa05.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">2인 패브릭 소파</p>
+                    <p class="product_price"><span class="sale">27%</span>889,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 18,290</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/sofa10.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">2인용 가죽 소파</p>
+                    <p class="product_price"><span class="sale">45%</span>349,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 17,710</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- sofa -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/cabinet11.png" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">모던 에센셜 거실 수납장</p>
+                    <p class="product_price"><span class="sale">20%</span>319,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 28,320</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/cabinet05.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">4칸 서랍장 블랙</p>
+                    <p class="product_price"><span class="sale">47%</span>109,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 25,310</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/cabinet06.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">1단 낮은 수납장</p>
+                    <p class="product_price"><span class="sale">20%</span>52,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 15,120</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/cabinet10.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">원목 낮은 수납장</p>
+                    <p class="product_price"><span class="sale">30%</span>448,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 32,810</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- cabinet -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/shelves01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">2단 트롤리 레드</p>
+                    <p class="product_price"><span class="sale">18%</span>52,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.4</p>
+                        <p class="review_num">리뷰 29,300</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/shelves02.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">3단 선반 유닛</p>
+                    <p class="product_price"><span class="sale">39%</span>24,500원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.5</p>
+                        <p class="review_num">리뷰 41,290</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/shelves04.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">2단 수납 선반</p>
+                    <p class="product_price"><span class="sale">17%</span>24,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 12,620</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/shelves07.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">철제 3단 선반</p>
+                    <p class="product_price"><span class="sale">33%</span>49,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 14,120</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- shelves -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/lamp04.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">무드등 조명</p>
+                    <p class="product_price"><span class="sale">48%</span>24,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 10,090</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/lamp01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">동그라미 스탠드 무드등</p>
+                    <p class="product_price"><span class="sale">9%</span>29,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 12,110</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/lamp07.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">침실 단스탠드 조명</p>
+                    <p class="product_price"><span class="sale">65%</span>17,500원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 10,990</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/lamp10.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">모던 화이트 작업등</p>
+                    <p class="product_price"><span class="sale">20%</span>34,800원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 14,630</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- lamp -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/chair01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">가죽 쿠션 카페 디자인 의자</p>
+                            <p class="product_price"><span class="sale">71%</span>19,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.5</p>
+                        <p class="review_num">리뷰 21,550</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/chair03.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">플리스틱 포인트 카페 의자</p>
+                    <p class="product_price"><span class="sale">83%</span>13,400원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.4</p>
+                        <p class="review_num">리뷰 11,590</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/chair05.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">플라스틱 카페 디자인 의자</p>
+                    <p class="product_price"><span class="sale">90%</span>23,400원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 39,530</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/chair07.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">1인용 소파 의자</p>
+                    <p class="product_price"><span class="sale">31%</span>129,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 27,210</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- chair -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/closet02.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">다용도 3단 서랍 옷장</p>
+                    <p class="product_price"><span class="sale">52%</span>64,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 58,580</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/closet05.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">옷장 이불장 장농</p>
+                    <p class="product_price"><span class="sale">46%</span>193,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 16,420</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/closet08.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">다용도 옷장 이불장 장농</p>
+                    <p class="product_price"><span class="sale">46%</span>299,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 11,020</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/closet10.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">원목 다용도 옷장 세트</p>
+                    <p class="product_price"><span class="sale">26%</span>219,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 29,170</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- closet -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/mirror08.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">금장 프렌치 엔틱 벽거울</p>
+                    <p class="product_price"><span class="sale">39%</span>29,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.5</p>
+                        <p class="review_num">리뷰 15,250</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/mirror10.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">심플 원형 벽거울</p>
+                    <p class="product_price"><span class="sale">28%</span>49,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 10,210</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/mirror01.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">거치형 전신 거울</p>
+                    <p class="product_price"><span class="sale">42%</span>19,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 12,780</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/mirror02.jpg" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">아치형 우드 거울</p>
+                    <p class="product_price"><span class="sale">9%</span>19,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.6</p>
+                        <p class="review_num">리뷰 12,000</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- mirror -->
+
+        <div class="best_item_wrap">
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/partition10 1.png" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">철제 파티션/ 칸막이</p>
+                    <p class="product_price"><span class="sale">39%</span>48,770원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.8</p>
+                        <p class="review_num">리뷰 19,990</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/partition08 1.png" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">접이식 스탠드 이동식 칸막이</p>
+                    <p class="product_price"><span class="sale">39%</span>40,000원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 35,910</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/partition04 1.png" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">아치형 스탠드 파티션</p>
+                    <p class="product_price"><span class="sale">44%</span>49,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.7</p>
+                        <p class="review_num">리뷰 23,330</p>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail_page/detail_page.html" class="best_item">
+                <div class="product_img">
+                    <img src="./images/partition05 1.png" alt="">
+                </div>
+                <div class="bookmark_img"></div>
+                <div class="product_txt">
+                    <p class="product_name">원단 낮은 파티션</p>
+                    <p class="product_price"><span class="sale">61%</span>52,900원</p>
+                    <div class="review">
+                        <div class="star_img">
+                            <img src="./images/star_icon.png" alt="">
+                        </div>
+                        <p class="review_score">4.9</p>
+                        <p class="review_num">리뷰 21,990</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- partition -->
+    </section>
+    <!-- best_item -->
+
+    <div class="tag_content_title">
+        <h3>인테리어태그</h3>
+        <p class="point">*3가지 태그를 선택하세요.</p>
+    </div>
+    <div class="tag_content_outer">
+        <section class="tag_content">
+            <div class="tag_left">
+                <button data-img="0">#모던</button>
+                <button data-img="1">#심플</button>
+                <button data-img="2">#내추럴</button>
+                <button data-img="3">#블랙</button>
+                <button data-img="4">#화이트</button>
+                <button data-img="5">#감성</button>
+                <button data-img="6">#미니멀</button>
+                <button data-img="7">#러블리</button>
+                <button data-img="8">#무드</button>
+                <button data-img="9">#레트로</button>
+                <button data-img="10">#빈티지</button>
+            </div>
+            <div class="tag_right">
+                <div class="tag_img tag_img_on">
+                    <img src="./images/tag_content01.png">
+                </div>
+                <div class="tag_img">
+                    <img src="./images/modern_mini_white.png" data-img-id="modern_mini_white" alt="" data-combo="0-4-6, 2-3-5, 0-1-4">
+                    <button class="hotspot"
+                        data-name="화이트 패브릭 소파"
+                        data-price="259,000원"
+                        data-thumb="./images/white_sofa01.png"
+                        style="top:70%; left:28%;">
+                    </button>
+
+                    <button class="hotspot"
+                        data-name="미니멀 화이트 테이블"
+                        data-price="48,000원"
+                        data-thumb="./images/white_table01.png"
+                        style="top:75%; left:64%;">
+                    </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/modern_simple_natural.png" data-img-id="modern_simple_natural" alt="" data-combo="0-1-2, 0-1-5, 0-1-8, 0-2-6">
+                    <button class="hotspot"
+                        data-name="내추럴 소파"
+                        data-price="350,000원"
+                        data-thumb="./images/natural_sofa01.png"
+                        style="top:50%; left:50%;">
+                    </button>
+
+                    <button class="hotspot"
+                        data-name="심플 원목 테이블"
+                        data-price="59,900원"
+                        data-thumb="./images/wood_table01.png"
+                        style="top:67%; left:50%;">
+                    </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/netural_wood_mood.png" data-img-id="netural_wood_mood" alt="" data-combo="2-5-8, 6-8-10">
+                    <button class="hotspot"
+                        data-name="우드 침대 프레임"
+                        data-price="560,000원" 
+                        data-thumb="./images/wood_bed01.png"
+                        style="top:68%; left:58%;">
+                    </button>
+
+                    <button class="hotspot"
+                        data-name="원목 벽걸이 선반"
+                        data-price="28,900원"
+                        data-thumb="./images/wood_shelves01.png"
+                        style="top:25%; left:45%;">
+                    </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/retro_binteage_mood.png" data-img-id="retro_binteage_mood" alt="" data-combo="8-9-10, 5-9-10">
+                    <button class="hotspot"
+                        data-name="레트로 패브릭 소파"
+                        data-price="250,000원"
+                        data-thumb="./images/binteage_sofa01.png"
+                        style="top:63%; left:70%;">
+                    </button>
+
+                    <button class="hotspot"
+                        data-name="우드 3단 선반"
+                        data-price="48,500"
+                        data-thumb="./images/wood_cabinet01.png"
+                        style="top:55%; left:25%;">
+                    </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/black_modern_simple.png" data-img-id="black_modern_simple" alt=""data-combo="0-1-3, 1-2-3, 0-3-6">
+                    <button class="hotspot"
+                        data-name="블랙 모던 소파"
+                        data-price="810,000원"
+                        data-thumb="./images/black_sofa01.png"
+                        style="top:53%; left:50%;">
+                    </button>
+
+                    <button class="hotspot"
+                        data-name="블랙 스틸 테이블"
+                        data-price="73,200"
+                        data-thumb="./images/black_table01.png"
+                        style="top:70%; left:50%;">
+                    </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/lovley_mood.png" data-img-id="lovley_mood" alt="" data-combo="5-7-8, 5-6-7, 6-7-8">
+                <button class="hotspot"
+                    data-name="파스텔 패브릭 소파"
+                    data-price="275,000원"
+                    data-thumb="./images/lovley_sofa01.png"
+                    style="top:53%; left:50%;">
+                </button>
+
+                <button class="hotspot"
+                    data-name="러블리 라운드 테이블"
+                    data-price="28,300원"
+                    data-thumb="./images/white_table02.png"
+                    style="top:73%; left:50%;">
+                </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/binteagi_modern_mood.png" data-img-id="binteagi_modern_mood" alt="" data-combo="0-5-10, 0-8-10">
+                <button class="hotspot"
+                    data-name="빈티지 모던 소파"
+                    data-price="780,000원"
+                    data-thumb="./images/binteage_sofa02.png"
+                    style="top:65%; left:50%;">
+                </button>
+
+                <button class="hotspot"
+                    data-name="모던 우드 테이블"
+                    data-price="230,000원"
+                    data-thumb="./images/wood_table02.png"
+                    style="top:73%; left:50%;">
+                </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/lovly_binteage_natural.png" data-img-id="lovly_binteage_natural" alt="" data-combo="2-7-10, 7-9-10, 0-7-10">
+                <button class="hotspot"
+                    data-name="내추럴 빈티지 소파"
+                    data-price="320,000원"
+                    data-thumb="./images/binteage_sofa03.png"
+                    style="top:50%; left:50%;">
+                </button>
+
+                <button class="hotspot"
+                    data-name="빈티지 원목 테이블"
+                    data-price="119,000원"
+                    data-thumb="./images/wood_table03.png"
+                    style="top:68%; left:55%;">
+                </button>
+                </div>
+                <div class="tag_img">
+                    <img src="./images/mini_natural_mood.png" data-img-id="mini_natural_mood" alt="" data-combo="2-5-6, 2-6-8">
+                <button class="hotspot"
+                    data-name="미니 내추럴 소파"
+                    data-price="362,000원"
+                    data-thumb="./images/mini_sofa01.png"
+                    style="top:52%; left:50%;">
+                </button>
+
+                <button class="hotspot"
+                    data-name="내추럴 미니 테이블"
+                    data-price="120,000원"
+                    data-thumb="./images/wood_table04.png"
+                    style="top:75%; left:56%;">
+                </button>
+                </div>
+                <div class="tag_img no_tag">
+                    <img src="./images/tag_content02.png" alt="">
+                </div>
+            </div>
+        </section>
+        <button class="reset_btn">초기화</button>
+    </div>
+    <!-- tag_content -->
+
+    <div class="recommend_item_wrap">
+        <section class="swiper recommend_item_box">
+            <h3>추천 상품</h3>
+            <a href="./sub_page/sub_page.html" class="point">더보기</a>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide recommend_wrap">
+                    <div class="recommend_item">
+                        <a href="./sub_page/sub_page.html" class="recommend_img">
+                            <img src="./images/table11.png" alt="">
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/cabinet11.png" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">모던 에센셜 거실 수납장</p>
+                                <p class="product_price"><span class="sale">20%</span>319,000원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.8</p>
+                                    <p class="review_num">리뷰 28,320</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/table11.png" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">모던 우드 거실 테이블</p>
+                                <p class="product_price"><span class="sale">30%</span>209,000원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.7</p>
+                                    <p class="review_num">리뷰 18,290</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recommend_item">
+                        <a href="./sub_page/sub_page.html" class="recommend_img">
+                            <img src="./images/recommend01.png" alt="">
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/sofa03.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">패브릭 1인용 소파</p>
+                                <p class="product_price"><span class="sale">45%</span>109,000원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.6</p>
+                                    <p class="review_num">리뷰 31,320</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/lamp07.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">침실 단스탠드 조명</p>
+                                <p class="product_price"><span class="sale">65%</span>17,500원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.6</p>
+                                    <p class="review_num">리뷰 10,990</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recommend_item">
+                        <a href="./sub_page/sub_page.html" class="recommend_img">
+                            <img src="./images/recommend02.png" alt="">
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/table09.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">모던 멀티 컴퓨터 책상</p>
+                                <p class="product_price"><span class="sale">23%</span>157,000원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.7</p>
+                                    <p class="review_num">리뷰 13,440</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/lamp10.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">모던 화이트 작업등</p>
+                                <p class="product_price"><span class="sale">20%</span>34,800원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.9</p>
+                                    <p class="review_num">리뷰 14,630</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide recommend_wrap">
+                    <div class="recommend_item">
+                        <a href="./sub_page/sub_page.html" class="recommend_img">
+                            <img src="./images/recommend03.png" alt="">
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/sofa05.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">2인 패브릭 소파</p>
+                                <p class="product_price"><span class="sale">27%</span>889,000원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.7</p>
+                                    <p class="review_num">리뷰 18,290</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/mirror10.jpg" alt="">
+                            </div>
+                            <div class="product_txt">
+                                <p class="product_name">심플 원형 벽거울</p>
+                                <p class="product_price"><span class="sale">28%</span>49,900원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.6</p>
+                                    <p class="review_num">리뷰 10,210</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recommend_item">
+                        <a href="./sub_page/sub_page.html" class="recommend_img">
+                            <img src="./images/recommend04.png" alt="">
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/bed19.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">챠콜 패브릭 호텔식 침대프레임</p>
+                                <p class="product_price"><span class="sale">52%</span>259,000원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.8</p>
+                                    <p class="review_num">리뷰 25,120</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/lamp04.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">무드등 조명</p>
+                                <p class="product_price"><span class="sale">48%</span>24,900원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.9</p>
+                                    <p class="review_num">리뷰 10,090</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="recommend_item">
+                        <a href="./sub_page/sub_page.html" class="recommend_img">
+                            <img src="./images/recommend05.png" alt="">
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/cabinet06.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">1단 낮은 수납장</p>
+                                <p class="product_price"><span class="sale">20%</span>52,000원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.9</p>
+                                    <p class="review_num">리뷰 15,120</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./detail_page/detail_page.html" class="recommend_product">
+                            <div class="product_img">
+                                <img src="./images/lamp04.jpg" alt="">
+                            </div>
+                            <div class="bookmark_img"></div>
+                            <div class="product_txt">
+                                <p class="product_name">무드등 조명</p>
+                                <p class="product_price"><span class="sale">48%</span>24,900원</p>
+                                <div class="review">
+                                    <div class="star_img">
+                                        <img src="./images/star_icon.png" alt="">
+                                    </div>
+                                    <p class="review_score">4.9</p>
+                                    <p class="review_num">리뷰 10,090</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="recommend_item-next"></div>
+        <div class="recommend_item-prev"></div>
+    </div>
+    <script>
+        var recommendSwiper = new Swiper(".recommend_item_box", {
+            simulateTouch: false,
+            navigation: {
+                nextEl: ".recommend_item-next",
+                prevEl: ".recommend_item-prev",
+            },
+            on: {
+                init: function() {
+                    toggleButtons(this, ".recommend_item-prev", ".recommend_item-next");
+                },
+                slideChange: function() {
+                    toggleButtons(this, ".recommend_item-prev", ".recommend_item-next");
+                }
+            }
+        });
+    </script>
+    <!-- recommend_item -->
+
+    <div class="quick_menu">
+        <a href="#" class="quick_top">
+            <img src="./images/quick_top.png" alt="">
+        </a>
+        <a href="#footer" class="quick_bottom">
+            <img src="./images/quick_bottom.png" alt="">
+        </a>
+    </div>
+    <!-- quick_menu -->
+
+    <div class="footer_outer" id="footer">
+        <footer class="footer">
+            <div class="customer">
+                <h3>고객센터</h3>
+                <div class="customer_txt">
+                    <div class="customer_left">
+                        <p class="tell">1588-4321</p>
+                        <p class="time">09:00 ~ 18:00</p>
+                    </div>
+                    <div class="customer_right">
+                        <p>평일: 전체 문의 상담</p>
+                        <p>토요일, 공휴일: 배송/주문 관련 상담</p>
+                        <p>일요일: 휴무</p>
+                        <p class="point">카카오톡 상담 (평일 09:00~18:00)</p>
+                        <button>이메일 문의</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <h3>서비스 안내</h3>
+                <div class="footer_nav">
+                    <a href="#">회사소개</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">제휴/광고 문의</a>
+                    <a href="#">채용정보</a>
+                    <a href="#">권리보호센터</a>
+                    <a href="#" class="bold">개인정보처리방침</a>
+                    <a href="#">상품광고 안내</a>
+                </div>
+            </div>
+            <div class="company_info">
+                <div class="company_top">
+                    <div class="logo_img"></div>
+                    <h3>Roomly</h3>
+                </div>
+                <p class="company_txt">(주)룸리(Roomly) | 대표 이은솔 | 서울특별시 마포구 월드컵북로 402, 15층 |contact@roomly.co.kr |</p>
+                <p class="company_txt">사업자등록번호 123-45-67890 | 사업자정보확인 | 통신판매업신고번호 제2026-서울마포-0123호</p>
+                <p class="copyright">Copyright © Roomly. All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

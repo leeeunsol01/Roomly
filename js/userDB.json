@@ -1,0 +1,20 @@
+[
+    { 
+        "name": "홍길동",
+        "id": "hong1234",
+        "pw": "Hong!12345",
+        "email": "hong@test.com" 
+    },
+    { 
+        "name": "김철수", 
+        "id": "chulsoo99",
+        "pw": "Chul!23456", 
+        "email": "chul@test.com"
+    },
+    { 
+        "name": "이영희",
+        "id": "younghee07", 
+        "pw": "Young!34567",
+        "email": "hee@test.com" 
+    }
+]

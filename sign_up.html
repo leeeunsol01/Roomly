@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roomly</title>
+    <link rel="shortcut icon" href="./images/Roomly.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/sign.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="./js/sign_up.js"></script>
+    <script>
+        $(function(){
+             $('.gnb_btn').on('click', function() {
+                $('.gnb_menu_outer').toggleClass('gnb_open');
+                $('.gnb_btn').toggleClass('gnb_btn_on');
+            });
+            // gnb
+
+            $('.rank_slide').on('click', function (e) {
+                e.stopPropagation();
+                $('.rank_modal').toggleClass('rank_open');
+            });
+
+            $('.rank_modal').on('click', function (e) {
+                e.stopPropagation();
+            });
+
+            $(document).on('click', function () {
+                $('.rank_modal').removeClass('rank_open');
+            });
+
+            const rankSlide = $('.rank_slide');
+            const rankHeight = 50;
+            const rankSpeed = 1000;
+            const rankDelay = 5000;
+
+            function rankSlideUp(){
+                rankSlide.animate({
+                    top: -rankHeight + 'px'
+                },rankSpeed,
+                    function() {
+                        rankSlide.append(rankSlide.children().first());
+                        rankSlide.css('top', 0);
+                    }
+                );
+            }
+
+            setInterval(rankSlideUp, rankDelay);
+            // rank
+        });
+    </script>
+</head>
+<body>
+    <div class="header_outer">
+        <header class="header">
+            <div class="header_left">
+                <a href="./index.html">
+                    <div class="logo_img"></div>
+                </a>
+                <a href="./index.html" class="brand_name">Roomly</a>
+                <input type="search" placeholder="검색어를 입력해주세요.">
+                <div class="zoom_img"></div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li><a href="#">
+                        <div class="shopping_cart_img"></div>
+                    </a></li>
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./sign_up.html">회원가입</a></li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <!-- header -->
+
+    <div class="gnb_outer">
+        <nav class="gnb">
+            <ul class="gnb_left">
+                <li class="gnb_btn">카테고리</li>
+                <li><a href="./sub_page/sub_page.html">특가 상품</a></li>
+                <li><a href="./sub_page/sub_page.html">신상품</a></li>
+                <li><a href="./sub_page/sub_page.html">사용자 리뷰</a></li>
+                <li><a href="./sub_page/sub_page.html">베스트</a></li>
+                <li><a href="./sub_page/sub_page.html">인테리어 태그</a></li>
+                <li><a href="./sub_page/sub_page.html">추천상품</a></li>
+            </ul>
+            <div class="gnb_right">
+                <div class="rank_slide">
+                    <div class="rank_wrap">
+                        <p>1</p>
+                        <div class="arrow_img"></div>
+                        <p>반타원 테이블</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>2</p>
+                        <p class="new">NEW</p>
+                        <p>3단 선반</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>3</p>
+                        <div class="down_arrow_img"></div>
+                        <p>솜이불 세트</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>4</p>
+                        <div class="arrow_img"></div>
+                        <p>도어커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>5</p>
+                        <div class="arrow_img"></div>
+                        <p>2인용 소파</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>6</p>
+                        <div class="arrow_img"></div>
+                        <p>붙이는 커튼</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>7</p>
+                        <p class="new">NEW</p>
+                        <p>펜트리 수납장</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>8</p>
+                        <div class="down_arrow_img"></div>
+                        <p>1인용 식탁</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>9</p>
+                        <p class="new">NEW</p>
+                        <p>접이식 의자</p>
+                    </div>
+                    <div class="rank_wrap">
+                        <p>10</p>
+                        <div class="down_arrow_img"></div>
+                        <p>원형 테이블</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rank_modal">
+                <h3>인기검색어</h3>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>1</p>
+                    <div class="arrow_img"></div>
+                    <p>반타원 테이블</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>2</p>
+                    <p class="new">NEW</p>
+                    <p>3단 선반</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>3</p>
+                    <div class="down_arrow_img"></div>
+                    <p>솜이불 세트</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>4</p>
+                    <div class="arrow_img"></div>
+                    <p>도어커튼</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>5</p>
+                    <div class="arrow_img"></div>
+                    <p>2인용 소파</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>6</p>
+                    <div class="arrow_img"></div>
+                    <p>붙이는 커튼</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>7</p>
+                    <p class="new">NEW</p>
+                    <p>펜트리 수납장</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>8</p>
+                    <div class="down_arrow_img"></div>
+                    <p>1인용 식탁</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>9</p>
+                    <p class="new">NEW</p>
+                    <p>접이식 의자</p>
+                </a>
+                <a href="./sub_page/sub_page.html" class="rank_wrap">
+                    <p>10</p>
+                    <div class="down_arrow_img"></div>
+                    <p>원형 테이블</p>
+                </a>
+            </div>
+        </nav>  
+    </div>
+
+    <div class="gnb_menu_outer">
+        <div class="gnb_menu">
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="bed_img"></div>
+                </a>
+                <p>침대</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="table_img"></div>
+                </a>
+                <p>테이블ㆍ식탁ㆍ책상</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="sofa_img"></div>
+                </a>
+                <p>소파</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="cabinet_img"></div>
+                </a>
+                <p>수납장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="shelves_img"></div>
+                </a>
+                <p>선반</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="lamp_img"></div>
+                </a>
+                <p>조명</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="chair_img"></div>
+                </a>
+                <p>의자</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="closet_img"></div>
+                </a>
+                <p>옷장</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="mirror_img"></div>
+                </a>
+                <p>거울</p>
+            </div>
+            <div class="sub_menu">
+                <a href="./sub_page/sub_page.html">
+                    <div class="partition_img"></div>
+                </a>
+                <p>파티션</p>
+            </div>
+        </div>
+    </div>
+    <!-- gnb -->
+
+    <nav class="breadcrumb">
+        <a href="./index.html">홈</a>
+        <a href="./login.html">로그인</a>
+        <a href="./sign_up.html">회원가입</a>
+    </nav>
+    <!-- breadcrumb -->
+
+    <div class="wrap">
+        <p class="point_txt">*필수 입력사항</p>
+        <form class="info_txt01">
+            <fieldset>
+                <ul class="sign_box01">
+                    <li class="name sign">
+                        <label class="detail_title" for="user_name">이름<span>*</span></label>
+                        <input type="text" name="username" id="user_name" required autofocus>
+                    </li>
+                    <li class="userid sign">
+                        <label class="detail_title" for="user_id">아이디<span>*</span></label>
+                        <input type="text" name="uesrid" id="user_id" required>
+                        <button type="button" class="id_chk">중복확인</button>
+                        <p class="id_detail">(영문 소문자 / 숫자, 4 ~ 16자)</p>
+                    </li>
+                    <li class="userpw sign">
+                        <label class="detail_title" for="user_pw">비밀번호<span>*</span></label>
+                        <input type="password" name="userpw1" id="user_pw1"required>
+                        <div class="pw_detail sign">
+                            <p class="point">※비밀번호 입력조건</p>
+                            <p>-대소문자/숫자/특수문자 2가지 이상 조합,</p>
+                            <p>10자~16자</p>
+                            <p>-입력 가능 특수문자</p>
+                            <p>~`!@#$%^()*_-={}[]|:;<>,.?/</p>
+                            <p>-공백 입력 불가능</p>
+                            <p>-연속된 문자, 숫자 사용 불가능</p>
+                            <p>-동일한 문자, 숫자를 반복해서 사용 불가능</p>
+                            <p>-아이디 포함 불가능</p>
+                        </div>
+                    </li>
+                    <li class="userpw_chk sign">
+                        <label class="detail_title" for="user_pw2">비밀번호 확인<span>*</span></label>
+                        <input type="password" name="userpw2" id="user_pw2" required>
+                        <p id="pw_chk"></p>
+                    </li>
+                    <li class="address_box sign">
+                        <div class="address_top">
+                            <label class="detail_title" for="user_addr">주소<span>*</span></label>
+                            <input type="text" name="address" class="user_addr" id="sample6_postcode" placeholder="우편번호" required>
+                            <button type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">우편번호</button>
+                        </div>  
+                        <div class="address_bottom">
+                            <input type="text" name="address" id="sample6_address" placeholder="기본주소" required>
+                            <input type="text" name="address" id="sample6_detailAddress" class="address" placeholder="나머지주소" required>
+                        </div>
+                    </li>
+                    <li class="tel sign">
+                        <label class="detail_title">휴대폰 번호<span>*</span></label>
+                        <select name="tel"  id="user_tel1">
+                            <option>010</option>
+                            <option>011</option>
+                            <option>016</option>
+                            <option>017</option>
+                            <option>018</option>
+                        </select>
+                        <span>-</span>
+                        <input type="tel" name="tel" id="user_tel2" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="4" required>
+                        <span>-</span>
+                        <input type="tel" name="tel" id="user_tel3" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="4" required>
+                        <button type="button" id="tell_btn">휴대폰 인증</button>
+                    </li>
+                    <li class="email sign">
+                        <label class="detail_title" for="user_email">이메일<span>*</span></label>
+                        <input type="email" name="email" id="user_email" required>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <form  class="info_txt02">
+            <fieldset>  
+                <ul class="sign_box02">
+                    <li class="birth sign">
+                        <label class="detail_title02" for="user_birth">생년월일</label>
+                        <input type="text" name="birth" id="user_birth1" oninput="this.value=this.value.replace(/[^0-9]/g,'')"><p class="txt">년</p>
+                        <input type="text" name="birth" id="user_birth2" oninput="this.value=this.value.replace(/[^0-9]/g,'')"><p class="txt">월</p>
+                        <input type="text" name="birth" id="user_birth3" oninput="this.value=this.value.replace(/[^0-9]/g,'')"><p class="txt">일</p>
+                        <input type="radio" name="birth" id="solar">
+                        <label for="solar">양력</label>
+                        <input type="radio" name="birth" id="lunar">
+                        <label for="lunar">음력</label>
+                    </li>
+                    <li class="size sign">
+                        <label class="detail_title02" for="user_size">사이즈 정보</label>
+                        <input type="text" name="size" id="user_size1" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="키"><p class="txt02">cm</p>
+                        <input type="text" name="size" id="user_size2" oninput="this.value=this.value.replace(/[^0-9]/g,'')" placeholder="몸무게"><p class="txt02">kg</p>
+                        <select name="top" id="top">
+                            <option hidden>상의 선택</option>
+                            <option>44</option>
+                            <option>55</option>
+                            <option>66</option>
+                        </select>
+                        <select name="bottom" id="bottom">
+                            <option hidden>하의 선택</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <form class="info_txt03">
+            <fieldset>
+                <ul class="sign_box03">
+                    <li class="total_terms term_box">
+                        <input type="checkbox" id="total_terms">
+                        <label for="total_terms">모든 약관 동의</label>
+                    </li>
+                    <li class="term_box">
+                        <input type="checkbox" id="terms01" class="term">
+                        <label for="term_txt01">[필수] <span class="under">이용약관</span> 동의</label>
+                        
+                        <input type="checkbox" id="term_txt01">
+                        <div class="term_txt_box term_txt_box01">
+                            <div class="term_sharp">
+                                <div class="term_top">
+                                    <p>이용약관</p>
+                                    <label for="term_txt01" class="close_img">
+                                        <img src="./images/close_btn.png" alt="닫기버튼">
+                                    </label>
+                                </div>
+                                <p class="term_first term_title">제1조(목적)</p>
+                                <p>이 약관은 (주)비케이피가 운영하는 "몰"에서 제공하는 인터넷 관련 서비스를 이용함에 있어 사이버 몰과 이용자의 권리.의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+                                <p>※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」</p>
+                                <p class="term_title">제2조(정의)</p>
+                                <p>① “몰”이란  (주)비케이피가 재화 또는 용역을 이용자에게 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 영업장을 말하며, 아울러 사이버몰을 운영하는 사업자의 의미로도 사용합니다.</p>
+                                <p>“이용자”란 “몰”에 접속하여 이 약관에 따라 “몰”이 제공하는 서비스를 받는 회원 및 비회원을 말합니다.</p>
+                                <p>③ ‘회원’이라 함은 “몰”에 회원등록을 한 자로서, 계속적으로 “몰”이 제공하는 서비스를 이용할 수 있는 자를 말합니다.</p>
+                                <p> ‘비회원’이라 함은 회원에 가입하지 않고 “몰”이 제공하는 서비스를 이용하는 자를 말합니다.</p>
+                                <p class="term_title">제3조 (약관 등의 명시와 설명 및 개정)</p>
+                                <p>① “몰”은 이 약관의 내용과 상호 및 대표자 성명, 영업소 소재지 주소(소비자의 불만을 처리할 수 있는 곳의 주소를 포함), 전화번호.모사전송번호.전자우편주소, 사업자등록번호, 통신판매업 신고번호, 개인정보보호책임자등을 이용자가 쉽게 알 수 있도록 "몰"의 초기 서비스화면(전면)에 게시합니다. 다만, 약관의 내용은 이용자가 연결화면을 통하여 볼 수 있도록 할 수 있습니다.</p>
+                                <p>② “몰은 이용자가 약관에 동의하기에 앞서 약관에 정하여져 있는 내용 중 청약철회.배송책임.환불조건 등과 같은 중요한 내용을 이용자가 이해할 수 있도록 별도의 연결화면 또는 팝업화면 등을 제공하여 이용자의 확인을 구하여야 합니다.</p>
+                                <p>③ “몰”은 「전자상거래 등에서의 소비자보호에 관한 법률」, 「약관의 규제에 관한 법률」, 「전자문서 및 전자거래기본법」, 「전자금융거래법」, 「전자서명법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」, 「방문판매 등에 관한 법률」, 「소비자기본법」 등 관련 법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.</p>
+                                <p>④ “몰”이 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 몰의 초기화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다. 다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 “몰“은 개정 전 내용과 개정 후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표블랙업시합니다.</p>
+                                <p>⑤ “몰”이 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정 전의 약관조항이 그대로 적용됩니다. 다만 이미 계약을 체결한 이용자가 개정약관 조항의 적용을 받기를 원하는 뜻을 제3항에 의한 개정약관의 공지기간 내에 “몰”에 송신하여 “몰”의 동의를 받은 경우에는 개정약관 조항이 적용됩니다.</p>
+                                <p>⑥ 이 약관에서 정하지 아니한 사항과 이 약관의 해석에 관하여는 전자상거래 등에서의 소비자보호에 관한 법률, 약관의 규제 등에 관한 법률, 공정거래위원회가 정하는 전자상거래 등에서의 소비자 보호지침 및 관계법령 또는 상관례에 따릅니다.</p>
+                                <p class="term_title">제4조(서비스의 제공 및 변경)</p>
+                                <p>① “몰”은 다음과 같은 업무를 수행합니다.<br>
+                                    1. 재화 또는 용역에 대한 정보 제공 및 구매계약의 체결<br>
+                                    2. 구매계약이 체결된 재화 또는 용역의 배송<br>
+                                    3. 기타 “몰”이 정하는 업무</p>
+                                <p>② “몰”은 재화 또는 용역의 품절 또는 기술적 사양의 변경 등의 경우에는 장차 체결되는 계약에 의해 제공할 재화 또는 용역의 내용을 변경할 수 있습니다. 이 경우에는 변경된 재화 또는 용역의 내용 및 제공일자를 명시하여 현재의 재화 또는 용역의 내용을 게시한 곳에 즉시 공지합니다.</p>
+                                <p>③ “몰”이 제공하기로 이용자와 계약을 체결한 서비스의 내용을 재화등의 품절 또는 기술적 사양의 변경 등의 사유로 변경할 경우에는 그 사유를 이용자에게 통지 가능한 주소로 즉시 통지합니다.</p>
+                                <p>④ 전항의 경우 “몰”은 이로 인하여 이용자가 입은 손해를 배상합니다. 다만, “몰”이 고의 또는 과실이 없음을 입증하는 경우에는 그러하지 아니합니다.</p>
+                                <p class="term_title">#카카오톡 알림톡 시행에 관한 내용</p>
+                                <p>“(주)비케이피”은 회원가입, 주문안내, 배송안내 등 비광고성 정보를 카카오톡 알림톡으로 알려드리며, 만약 알림톡 수신이 불가능하거나 수신 차단하신 경우에는 일반 문자메시지로 보내드립니다. 카카오톡 알림톡을 통해 안내되는 정보를 와이파이가 아닌 이동통신망으로 이용할 경우, 알림톡 수신 중 데이터 요금이 발생할 수 있습니다. 카카오톡을 통해 발송되는 알림톡 수신을 원치 않으실 경우 반드시 알림톡을 차단하여 주시기 바랍니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="term_box">
+                        <input type="checkbox" id="terms02" class="term">
+                        <label for="term_txt02">[필수] <span class="under">개인정보처리방침</span> 동의</label>
+
+                        <input type="checkbox" id="term_txt02">
+                        <div class="term_txt_box term_txt_box02">
+                            <div class="term_sharp">
+                                <div class="term_top">
+                                    <p>개인정보처리방침</p>
+                                    <label for="term_txt02" class="close_img">
+                                        <img src="./images/close_btn.png" alt="닫기버튼">
+                                    </label>
+                                </div>
+                                <p class="term_first term_title">■ 수집하는 개인정보 항목</p>
+                                <p>회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+                                <p>ο 수집항목 : 이름 , 생년월일 , 성별 , 로그인ID , 비밀번호 , 비밀번호 질문과 답변 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 직업 , 회사명 , 부서 , 직책 , 회사전화번호 , 취미 , 결혼여부 , 기념일 , 법정대리인정보 , 서비스 이용기록 , 접속 로그 , 접속 IP 정보 , 결제기록</p>
+                                <p>ο 개인정보 수집방법 : 홈페이지(회원가입) , 서면양식</p>
+                                <p class="term_title">■ 개인정보의 수집 및 이용목적</p>
+                                <p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                                <p>ο 서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 콘텐츠 제공 , 구매 및 요금 결제 , 물품배송 또는 청구지 등 발송</p>
+                                <p>ο 회원 관리
+                                회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 연령확인 , 만14세 미만 아동 개인정보 수집 시 법정 대리인 동의여부 확인 , 고지사항 전달</p>
+                                <p class="term_title">■ 개인정보의 보유 및 이용기간</p>
+                                <p>회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="term_box">
+                        <input type="checkbox" id="terms03" class="term">
+                        <label for="term_txt03">[선택] <span class="under">개인정보 수집 및 이용</span> 동의</label>
+
+                        <input type="checkbox" id="term_txt03">
+                        <div class="term_txt_box term_txt_box03">
+                            <div class="term_sharp">
+                                <div class="term_top">
+                                    <p>개인정보 수집 및 이용</p>
+                                    <label for="term_txt03" class="close_img">
+                                        <img src="./images/close_btn.png" alt="닫기버튼">
+                                    </label>
+                                </div>
+                                <p class="term_first term_title">■ 수집하는 개인정보 항목</p>
+                                <p>회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다. </p>
+                                <p>ο 수집항목 : 이름 , 생년월일 , 성별 , 로그인ID , 비밀번호 , 비밀번호 질문과 답변 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 직업 , 회사명 , 부서 , 직책 , 회사전화번호 , 취미 , 결혼여부 , 기념일 , 법정대리인정보 , 서비스 이용기록 , 접속 로그 , 접속 IP 정보 , 결제기록</p>
+                                <p>ο 개인정보 수집방법 : 홈페이지(회원가입) , 서면양식</p>
+                                <p class="term_title">■ 개인정보의 수집 및 이용목적</p>
+                                <p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                                <p> ο 할인쿠폰 및 혜택, 이벤트, 신상품 소식 등 쇼핑몰에서 제공하는 유익한 쇼핑정보를 SMS나 이메일로 받아보실 수 있습니다. 단, 주문/거래 정보 및 주요 정책과 관련된 내용은 수신동의 여부와 관계없이 발송됩니다.</p>
+                                <p class="term_title">■ 개인정보의 보유 및 이용기간</p>
+                                <p>회사는 개인정보 수집 및 이용목적이 달성된 후에는 예외 없이 해당 정보를 지체 없이 파기합니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="term_box">
+                        <input type="checkbox" id="terms04" class="term">
+                        <label for="term_txt04">[선택] <span class="under">마케팅 및 광고의 활용</span></label>
+
+                        <input type="checkbox" id="term_txt04">
+                        <div class="term_txt_box term_txt_box04">
+                            <div class="term_sharp">
+                                <div class="term_top">
+                                    <p>마케팅 및 광고의 활용</p>
+                                    <label for="term_txt04" class="close_img">
+                                        <img src="./images/close_btn.png" alt="닫기버튼">
+                                    </label>
+                                </div>
+                                <p class="term_first term_title">■ 수집하는 개인정보 항목</p>
+                                <p>회사는 회원가입, 상담, 서비스 신청 등등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+                                <p>ο 수집항목 : 이름 , 생년월일 , 성별 , 로그인ID , 비밀번호 , 비밀번호 질문과 답변 , 자택 전화번호 , 자택 주소 , 휴대전화번호 , 이메일 , 직업 , 회사명 , 부서 , 직책 , 회사전화번호 , 취미 , 결혼여부 , 기념일 , 법정대리인정보 , 서비스 이용기록 , 접속 로그 , 접속 IP 정보 , 결제기록</p>
+                                <p>ο 개인정보 수집방법 : 홈페이지(회원가입) , 서면양식</p>
+                                <p class="term_title">■ 개인정보의 수집 및 이용목적</p>
+                                <p>회사는 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <button type="button" class="sign_btn">회원가입</button>
+    </div>
+        <!-- sign_up -->
+
+        <div class="quick_menu">
+        <a href="#" class="quick_top">
+            <img src="./images/quick_top.png" alt="">
+        </a>
+        <a href="#footer" class="quick_bottom">
+            <img src="./images/quick_bottom.png" alt="">
+        </a>
+    </div>
+    <!-- quick_menu -->
+
+    <div class="footer_outer" id="footer">
+        <footer class="footer">
+            <div class="customer">
+                <h3>고객센터</h3>
+                <div class="customer_txt">
+                    <div class="customer_left">
+                        <p class="tell">1588-4321</p>
+                        <p class="time">09:00 ~ 18:00</p>
+                    </div>
+                    <div class="customer_right">
+                        <p>평일: 전체 문의 상담</p>
+                        <p>토요일, 공휴일: 배송/주문 관련 상담</p>
+                        <p>일요일: 휴무</p>
+                        <p class="point">카카오톡 상담 (평일 09:00~18:00)</p>
+                        <button>이메일 문의</button>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <h3>서비스 안내</h3>
+                <div class="footer_nav">
+                    <a href="#">회사소개</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">제휴/광고 문의</a>
+                    <a href="#">채용정보</a>
+                    <a href="#">권리보호센터</a>
+                    <a href="#" class="bold">개인정보처리방침</a>
+                    <a href="#">상품광고 안내</a>
+                </div>
+            </div>
+            <div class="company_info">
+                <div class="company_top">
+                    <div class="logo_img"></div>
+                    <h3>Roomly</h3>
+                </div>
+                <p class="company_txt">(주)룸리(Roomly) | 대표 이은솔 | 서울특별시 마포구 월드컵북로 402, 15층 |contact@roomly.co.kr |</p>
+                <p class="company_txt">사업자등록번호 123-45-67890 | 사업자정보확인 | 통신판매업신고번호 제2026-서울마포-0123호</p>
+                <p class="copyright">Copyright © Roomly. All rights reserved. </p>
+            </div>
+        </footer>
+    </div>
+    <!-- footer -->
+</body>
+</html>

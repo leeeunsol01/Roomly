@@ -1,0 +1,1244 @@
+/******************* defaul ********************/
+*{margin: 0; padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+p,h1,h3,a{
+    color: #4A4A4A;
+}
+$main: #A8B2A1;
+$sub: #E6E3DE;
+$point: #C97A63;
+$text: #4A4A4A;
+$text02: white;
+$line01: #EAEAEA;
+$line02: #DEDCD7;
+$font12: 0.75rem;
+$font14: 0.875rem;
+$font16: 1rem;
+$font18: 1.125rem;
+$font20: 1.25rem;
+$font24: 1.5rem;
+$font28: 1.75rem;
+$font36: 2.25rem;
+$ma8: 8px;
+$ma16: 16px;
+$ma20: 20px;
+$ma24: 24px;
+$ma32: 32px;
+$ma64: 64px;
+$ma72: 72px;
+$ma100: 100px;
+$ma128: 128px;
+
+@mixin size($width, $height){
+    width: $width;
+    height: $height;
+}
+
+/******************* header ********************/
+.header_outer{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: 1px solid $line01;
+    z-index: 1000;
+    .header{
+        @include size(1200px, 80px);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_left{
+            display: flex;
+            align-items: center;
+            position: relative;
+            .logo_img{
+                @include size(40px, 40px);
+                background-image: url('../images/Roomly.png');
+                background-size: cover;
+            }
+            .brand_name{
+                font-size: $font20;
+                font-weight: 600;
+                margin-right: 40px;
+            }
+            input{
+                @include size(590px, 45px);
+                border: 1px solid $line01;
+                border-radius: 10px;
+                padding: 0 10px 0 45px;
+            }
+            .zoom_img{
+                @include size(25px, 25px);
+                background-image: url('../images/zoom.png');
+                background-size: cover;
+                position: absolute;
+                top: 50%;
+                left: 165px;
+                transform: translateY(-50%);
+            }
+        }
+        .header_right{
+            ul{
+                display: flex;
+                align-items: center;
+                li{
+                    margin-right: 20px;
+                    position: relative;
+                    a{
+                        font-size: $font14;
+                        .shopping_cart_img{
+                            @include size(25px, 25px);
+                            background-image: url('../images/shopping_cart.png');
+                            background-size: cover;
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0;
+                    }
+                    &::before{
+                        content: '|';
+                        position: absolute;
+                        top: 50%;
+                        right: -10px;
+                        transform: translateY(-50%);
+                        color: $text;
+                        font-size: $font12;
+                    }
+                    &:last-child::before{
+                        content: none;
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/******************* gnb ********************/
+.gnb_outer{
+    border-bottom: 1px solid $line01;
+    .gnb{
+        @include size(1200px, 50px);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        .gnb_left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin-right: 20px;
+                a{
+                    padding: 2px 12px;
+                    font-weight: 500;
+                    &:hover{
+                        font-weight: 600;
+                    }
+                }
+            }
+            .gnb_btn{
+                font-weight: 500;
+                padding: 2px 12px;
+                color: $text;
+                cursor: pointer;
+                &.gnb_btn_on{
+                    font-weight: 600;
+                }
+                &:hover{
+                    font-weight: 600;
+                }
+            }
+        }
+        .gnb_right{
+            overflow: hidden;
+            position: relative;
+            .rank_slide{
+                height: 50px;
+                position: relative;
+                .rank_wrap{
+                    @include size(183px, 50px);
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    cursor: pointer;
+                    p{
+                        font-weight: 600;
+                        margin-right: 10px;
+                    }
+                    .new{
+                        color: $point
+                    }
+                    .arrow_img{
+                        @include size(13px, 8px);
+                        background-image: url('../images/rank_arrow.png');
+                        background-size: cover;
+                        margin-right: 10px;
+                    }
+                    .down_arrow_img{
+                        @include size(13px, 8px);
+                        background-image: url('../images/down_arrow.png');
+                        background-size: cover;
+                        margin-right: 10px;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        transform: translateY(-50%);
+                        @include size(17px, 10px);
+                        background-image: url('../images/select_arrow.png');
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+        .rank_modal{
+            display: none;
+            position: absolute;
+            top: 50px;
+            right: 0;
+            padding: $ma20 40px;
+            background-color: white;
+            border: 1px solid $line01;
+            border-radius: 10px;
+            z-index: 1000;
+            &.rank_open{
+                display: block;
+            }
+            h3{
+                font-size: $font24;
+                margin-bottom: 10px;
+            }
+            .rank_wrap{
+                @include size(183px, 50px);
+                display: flex;
+                align-items: center;
+                position: relative;
+                cursor: pointer;
+                p{
+                    font-weight: 600;
+                    margin-right: 10px;
+                }
+                .new{
+                    color: $point
+                }
+                .arrow_img{
+                    @include size(13px, 8px);
+                    background-image: url('../images/rank_arrow.png');
+                    background-size: cover;
+                    margin-right: 10px;
+                }
+                .down_arrow_img{
+                    @include size(13px, 8px);
+                    background-image: url('../images/down_arrow.png');
+                    background-size: cover;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.gnb_menu_outer{
+    width: 100%;
+    height: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 142px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    &.gnb_open{
+        height: 150px;
+        padding: $ma20 0;
+        border-bottom: 1px solid $line01;
+    }
+    .gnb_menu{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        .sub_menu{
+            margin-right: $ma24;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include size(98px, 98px);
+                background-color: $sub;
+                border-radius: 50%;
+                border: 3px solid transparent;
+                .bed_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/bed_icon.png');
+                    background-size: cover;
+                }
+                .table_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/desk_icon.png');
+                    background-size: cover;
+                }
+                .sofa_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/sofa_icon.png');
+                    background-size: cover;
+                }
+                .cabinet_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/cabinet_icon.png');
+                    background-size: cover;
+                }
+                .shelves_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/shelves_icon.png');
+                    background-size: cover;
+                }
+                .lamp_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/lamp_icon.png');
+                    background-size: cover;
+                }
+                .chair_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/chair_icon.png');
+                    background-size: cover;
+                }
+                .closet_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/closet_icon.png');
+                    background-size: cover;
+                }
+                .mirror_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/mirror_icon.png');
+                    background-size: cover;
+                }
+                .partition_img{
+                    @include size(45px, 45px);
+                    background-image: url('../images/partition_icon.png');
+                    background-size: cover;
+                }
+            }
+            &:hover{
+                border: 3px solid $point;
+                background-color: rgba($sub,0.5);
+                transition: all 0.3s ease;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+/******************* breadcrumb ********************/
+.breadcrumb{
+    width: 1200px;
+    margin: 20px auto $ma64;
+    a{
+        font-size: $font14;
+        font-weight: 500;
+        margin-right: $ma20;
+        position: relative;
+        &:last-child{
+            margin-right: 0;
+        }
+        &::before{
+            content: '>';
+            font-size: $font14;
+            font-weight: 500;
+            position: absolute;
+            top: 0;
+            right: -15px;
+        }
+        &:last-child::before{
+            content: none;
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+/******************* order_section ********************/
+.order_section{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start; 
+    overflow: visible;
+    .order_left{
+        width: 692px;
+        margin-right: 20px;
+        margin-bottom: $ma128;
+        .product_img_wrap{
+            display: flex;
+            .sub_img_wrap{
+                button{
+                    @include size(82px, 82px);
+                    display: block;
+                    border: none;
+                    margin-bottom: 10px;
+                    margin-right: $ma20;
+                    img{
+                        @include size(100%, 100%);
+                    }
+                    &.sub_img_on{
+                        border: 2px solid $point
+                    }
+                }
+            }
+            .main_img_wrap{
+                .main_img{
+                    @include size(590px, 590px);
+                    display: none;
+                    img{
+                        @include size(100%, 100%);
+                    }
+                    &.main_img_on{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .page_nav{
+            width: 692px;
+            margin: $ma64 auto;
+            ul{
+                display: flex;
+                border-top: 1px solid $line01;
+                border-bottom: 1px solid $line01;
+                li{
+                    text-align: center;
+                    line-height: 60px;
+                    a{
+                        display: block;
+                        @include size(173px, 60px);
+                        font-weight: 500;
+                    }
+                    &.nav_on{
+                        border-bottom: 3px solid $main; box-sizing: border-box;
+                    }  
+                    &.nav_on a{
+                        color: $main;
+                    }  
+                }
+            }
+        }
+        .detail_box{
+            width: 692px;
+            margin: 0 auto;
+            .detail_img01{
+                @include size(692px, 692px);
+                margin-bottom: $ma64;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            .detail_img02{
+                @include size(692px, 583px);
+                margin-bottom: $ma64;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            .detail_img{
+                @include size(692px, 692px);
+                margin-bottom: $ma64;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            .detail_bold{
+                font-size: $font28;
+            }
+            .detail_txt{
+                font-size: $font20;
+                margin-bottom: $ma64;
+            }
+        }
+    }
+    .order_right{
+        position: sticky;
+        top: 80px;
+        right: 0;
+        width: 488px;
+        background-color: white;
+        padding-top: $ma20;
+        .product_name{
+            font-size: $font20;
+            font-weight: 500;
+            margin-bottom: $ma20;
+        }
+        .product_price{
+            font-size: $font28;
+            font-weight: 600;
+            margin-bottom: $ma20;
+            .sale{
+                color: $point;
+                font-size: $font24;
+                margin-right: 10px;
+            }
+        }
+        .product_review{
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            .star_img{
+                @include size(20px, 20px);
+                margin-right: 4px;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            .half_star_img{
+                @include size(35px, 35px);
+                transform: translate(-3px, 4px);
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            .review_total{
+                margin-left: 10px;
+                color: #7A7A7A;
+            }
+        }
+        .delivery{
+            display: flex;
+            padding-bottom: $ma64;
+            border-bottom: 1px solid $line01;
+            .deli_title{
+                margin-right: $ma20;
+                font-size: $font14;
+            }
+            .deli_txt{
+                font-size: $font14;
+                .deli_bold{
+                    font-weight: 500;
+                }
+            }
+        }
+        .product_select{
+            margin-top: $ma20;
+            position: relative;
+            .select_btn{
+                @include size(488px, 60px);
+                border: 1px solid $line01;
+                background-color: white;
+                padding: $ma20;
+                text-align: start;
+                border-radius: 10px;
+                cursor: pointer;
+                position: relative;
+                &::before{
+                    content: '';
+                    @include size(15px, 9px);
+                    background-image: url('../images/select_arrow.png');
+                    background-size: cover;
+                    position: absolute;
+                    top: 50%;
+                    right: 20px;
+                    transform: translateY(-50%);
+                }
+            }
+            ul{
+                border: 1px solid $line01;
+                border-radius: 10px;
+                background-color: white;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 100;
+                display: none;
+                li{
+                    padding: 15px $ma20;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $line02;
+                    }
+                }
+            }
+        }
+        .select_detail_box{
+            margin-top: 10px;
+            .select_detail{
+                border: 1px solid $line01;
+                padding: 10px;
+                border-radius: 10px;
+                position: relative;
+                margin-top: 10px;
+                display: none;
+                &.select_detail_on{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                >p{
+                    width: 145px;
+                }
+                .product_qty{
+                    display: flex;
+                    align-items: center;
+                    .minus_btn{
+                        @include size(30px, 30px);
+                        background-image: url('../images/minus_btn.png');
+                        background-size: cover;
+                        cursor: pointer;
+                    }
+                    .num{
+                        margin: 0 10px;
+                    }
+                    .plus_btn{
+                        @include size(30px, 30px);
+                        background-image: url('../images/plus_btn.png');
+                        background-size: cover;
+                        cursor: pointer;
+                    }
+                }
+                .select_price{
+                    width: 150px;
+                    text-align: end;
+                    margin-right: 10px;
+                    transform: translateX(-10px);
+                }
+                .close_img{
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    @include size(12px, 12px);
+                    background-image: url('../images/close_btn.png');
+                    background-size: cover;
+                    cursor: pointer;
+                }
+            }
+        }
+        .order_box{
+            margin-top: $ma20;
+            .price_section{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: $ma20;
+            }
+            .cart_btn{
+                float: left;
+                @include size(239px, 50px);
+                border: 1px solid $main;
+                border-radius: 10px;
+                background-color: white;
+                font-size: $font18;
+                font-weight: 500;
+                margin-right: 10px;
+                display: block;
+                cursor: pointer;
+            }
+            .buy_btn{
+                float: right;
+                @include size(239px, 50px);
+                border: none;
+                border-radius: 10px;
+                background-color: $main;
+                font-size: $font18;
+                font-weight: 500;
+                color: white;
+                display: block;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
+
+/******************* review ********************/
+.page_nav_outer{
+    position: sticky;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    height: 60px;
+    border-top: 1px solid $line01;
+    border-bottom: 1px solid $line01;
+    margin: $ma64 0;
+    z-index: 1000;
+    .page_nav{
+        width: 1200px;
+        margin: 0 auto;
+        ul{
+            display: flex;
+            li{
+                text-align: center;
+                line-height: 60px;
+                a{
+                    display: block;
+                    @include size(300px, 60px);
+                    font-weight: 500;
+                }
+                &.nav_on{
+                    border-bottom: 3px solid $main; box-sizing: border-box;
+                }  
+                &.nav_on a{
+                    color: $main;
+                }  
+            }
+        }
+    }
+}
+
+.review_title{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    h3{
+        display: inline-block;
+        font-size: $font24;
+    }
+    .review_btn{
+        float: right;
+        border: none;
+        background-color: $main;
+        color: white;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+.review_box{
+    margin-bottom: $ma128;
+    .review_score_outer{
+        background-color: $sub;
+        margin-top: 40px;
+        margin-bottom: $ma64;
+        .review_score{
+            @include size(1200px, 250px);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            .score_left{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .star_img{
+                    @include size(55px, 55px);
+                    img{
+                        @include size(100%, 100%);
+                    }
+                }
+                .half_star_img{
+                    @include size(65px, 65px);
+                    transform: translateY(2.5px);
+                    img{
+                        @include size(100%, 100%);
+                    }
+                }
+                h3{
+                    font-size: $font24;
+                }
+            }
+            .score_right{
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-left: 1px solid $line01;
+                ul{
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 8px;
+                        p{
+                            font-weight: 500;
+                            margin-right: $ma20
+                        }
+                        .graph{
+                            @include size(264px, 15px);
+                            background-color: white;
+                            border-radius: 5px;
+                            position: relative;
+                            &.five_graph::before{
+                                content: '';
+                                @include size(254px, 15px);
+                                background-color: $main;
+                                border-radius: 5px;
+                                position: absolute;
+                            }
+                            &.four_graph::before{
+                                content: '';
+                                @include size(64px, 15px);
+                                background-color: $main;
+                                border-radius: 5px;
+                                position: absolute;
+                            }
+                            &.three_graph::before{
+                                content: '';
+                                @include size(31px, 15px);
+                                background-color: $main;
+                                border-radius: 5px;
+                                position: absolute;
+                            }
+                            &.two_graph::before{
+                                content: '';
+                                @include size(13px, 15px);
+                                background-color: $main;
+                                border-radius: 5px;
+                                position: absolute;
+                            }
+                            &.one_graph::before{
+                                content: '';
+                                @include size(5px, 15px);
+                                background-color: $main;
+                                border-radius: 10px;
+                                position: absolute;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .review{
+        width: 1200px;
+        margin: 0 auto $ma20;
+        border-bottom: 1px solid $line01;
+        padding-bottom: $ma24;
+        .review_user{
+            display: flex;
+            align-items: center;
+            .user_img{
+                @include size(25px, 25px);
+                margin-right: 10px;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            .user_name{
+                margin-right: 10px;   
+            }
+            .star{
+                display: flex;
+                align-items: center;
+                .star_img{
+                    @include size(15px, 15px);
+                    margin-right: 4px;
+                    img{
+                        @include size(100%, 100%);
+                    }
+                }
+            }
+        }
+        .review_txt{
+            margin-top: $ma20;
+            display: flex;
+            justify-content: space-between;
+            p{
+                font-size: $font18;
+            }
+            .txt_right{
+                width: 150px;
+                margin-left: $ma64;
+                text-align: end;
+                .day{
+                    font-size: $font14;
+                    color: #7A7A7A;
+                    margin-bottom: $ma20;
+                }
+                .good{
+                    border: 1px solid $line01;
+                    border-radius: 20px;
+                    background-color: white;
+                    color: $text;
+                    font-weight: 500;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .review_pagination{
+        width: 1200px;
+        margin: $ma64 auto 0;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                font-size: $font18;
+                margin-right: $ma20;
+                cursor: pointer;
+            }
+            .bold{
+                font-size: $font20;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.review_overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    @include size(100%, 100vh);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    &.review_on{
+        display: block;
+    }
+    .review_modal{
+        background-color: white;
+        border: 1px solid $line01;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: $ma20;
+        .review_modal_txt{
+            position: relative;
+            .close_img{
+                @include size(20px, 20px);
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            h3{
+                font-size: $font20;
+                margin-bottom: 10px;
+            }
+            .review_score{
+                @include size(50px, 30px);
+                font-size: $font18;
+                margin-bottom: $ma20;
+                padding: 0 4px;
+            }
+            .title_txt{
+                @include size(386px, 30px);
+                font-size: $font18;
+                margin-bottom: $ma20;
+                padding: 0 4px;
+            }
+            .review_txt{
+                @include size(386px, 300px);
+                resize: none;
+                font-size: $font18;
+                margin-bottom: 40px;
+                padding: 4px;
+            }
+        }
+        .review_txt_btn{
+            border: none;
+            background-color: $point;
+            color: white;
+            font-size: $font18;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+}
+
+/******************* qna ********************/
+.qna_box{
+    width: 1200px;
+    margin: 0 auto $ma128;
+    .qna_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $ma20;
+        h3{
+            font-size: $font24;
+        }
+        .qna_btn{
+            border: none;
+            background-color: $main;
+            color: white;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+    .qna{
+        border-bottom: 1px solid $line01;
+        padding-bottom: $ma20;
+        margin-bottom: $ma20;
+        .qna_user{
+            display: flex;
+            margin-bottom: $ma20;
+            .user_img{
+                @include size(25px, 25px);
+                margin-right: 10px;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+        }
+        .qna_txt{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .txt_left{
+                display: flex;
+                align-items: center;
+                .lock_img{
+                    @include size(25px, 25px);
+                    margin-right: 10px;
+                    img{
+                        @include size(100%, 100%);
+                    }
+                }
+                p{
+                    font-size: $font18;
+                }
+            }
+        }
+    }
+    .qna_pagination{
+        width: 1200px;
+        margin: $ma64 auto 0;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                font-size: $font18;
+                margin-right: $ma20;
+                cursor: pointer;
+            }
+            .bold{
+                font-size: $font20;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.qna_overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    @include size(100%, 100vh);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    &.qna_on{
+        display: block;
+    }
+    .qna_modal{
+        background-color: white;
+        border: 1px solid $line01;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: $ma20;
+        .qna_modal_txt{
+            position: relative;
+            .close_img{
+                @include size(20px, 20px);
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+                img{
+                    @include size(100%, 100%);
+                }
+            }
+            h3{
+                font-size: $font20;
+                margin-bottom: 10px;
+            }
+            .title_txt{
+                @include size(386px, 30px);
+                font-size: $font18;
+                margin-bottom: $ma20;
+                padding: 0 4px;
+            }
+            .qna_txt{
+                @include size(386px, 300px);
+                resize: none;
+                font-size: $font18;
+                margin-bottom: 40px;
+                padding: 4px;
+            }
+        }
+        .qna_txt_btn{
+            border: none;
+            background-color: $point;
+            color: white;
+            font-size: $font18;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+}
+
+/******************* delivery_box ********************/
+.delivery_box{
+    width: 1200px;
+    margin: 0 auto;
+    .delivery_title{
+        font-size: $font24;
+        margin-bottom: $ma24;
+    }
+    .delivery{
+        border-bottom: 1px solid $line01;
+        padding-bottom: $ma20;
+        margin-bottom: $ma20;
+        .deli_title{
+            font-size: $font20;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        ul{
+            transform: translateX(20px);
+            li{
+                list-style: decimal;
+                color: $text;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+/******************* quick_menu ********************/
+.quick_menu{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    a{
+        display: block;
+        @include size(50px, 50px);
+        cursor: pointer;
+        img{
+            @include size(100%, 100%);
+        }
+        &:hover{
+            filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+        }
+    }
+    .quick_top{
+        margin-bottom: 10px;
+    }
+}
+
+/******************* footer ********************/
+.footer_outer{
+    background-color: $sub;
+    .footer{
+        width: 1200px;
+        margin: 328px auto 0;
+        padding: 40px 0;
+        display: flex;
+        .customer{
+            border-right: 1px solid $line01;
+            h3{
+                font-size: $font24;
+                margin-bottom: $ma20;
+            }
+            .customer_txt{
+                width: 305px ;
+                display: flex;
+                .customer_left{
+                    margin-right: $ma20;
+                    .tell{
+                        font-size: $font18;
+                        font-weight: 600;
+                        color: $point;
+                    }
+                    .time{
+                        font-size: $font14;
+                    }
+                }
+                .customer_right{
+                    font-size: $font12;
+                    .point{
+                        font-weight: 500;
+                    }
+                    button{
+                        border: 1px solid $line01;
+                        background-color: white;
+                        padding: 5px 12px;
+                        border-radius: 5px;
+                        margin-top: 8px;
+                        color: $text;
+                    }
+                }
+            }
+        }
+        .service{
+            width: 305px;
+            border-right: 1px solid $line01;
+            h3{
+                font-size: $font24;
+                margin-bottom: $ma20;
+                margin-left: $ma20;
+            }
+            .footer_nav{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                a{
+                    display: inline-block;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    font-size: $font12 ;
+                }
+                .bold{
+                    font-weight: 600;
+                }
+            }
+        }
+        .company_info{
+            width: 590px;
+            margin-left: 40px;
+            .company_top{
+                display: flex;
+                .logo_img{
+                    @include size(40px, 40px);
+                    background-image: url('../images/Roomly.png');
+                    background-size: cover;
+                }
+                h3{
+                    font-size: $font24;
+                    margin-bottom: $ma20;
+                    margin-left: 4px;
+                }
+            }
+            .company_txt{
+                font-size: $font12;
+            }
+            .copyright{
+                margin-top: 30px;
+                font-size: $font12;
+            }
+        }
+    }
+}

@@ -198,7 +198,6 @@
         }, 200);
     });
 
-    // 🔥 product_box 위에 마우스 올려도 유지
     $(document).on('mouseenter', '.product_box', function(){
         clearTimeout(hideTimer);
     });
@@ -206,8 +205,6 @@
     $(document).on('mouseleave', '.product_box', function(){
         productBox.fadeOut(100);
     });
-
-
     // tag_content
 
     $('.quick_top').on('click', function(){

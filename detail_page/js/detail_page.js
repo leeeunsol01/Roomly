@@ -163,7 +163,7 @@ $(function(){
     });
 
     $(window).on('scroll', function () {
-        let scrollTop = $(window).scrollTop() + 260; // offset 보정
+        let scrollTop = $(window).scrollTop() + 300; // offset 보정
 
         let currentId;
 

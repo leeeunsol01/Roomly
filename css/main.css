@@ -1053,9 +1053,6 @@ p, h1, h3, a {
   color: #C97A63;
   margin-bottom: 20px;
 }
-.tag_content_title .point:hover {
-  text-decoration: underline;
-}
 
 .tag_content_outer {
   background-color: #E6E3DE;

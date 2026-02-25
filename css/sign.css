@@ -584,18 +584,12 @@ fieldset {
   width: 620px;
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px auto;
 }
 
 .sign_box02 .detail_title02 {
   width: 75px;
   margin-right: 10px;
-}
-
-.sign_box02 .size {
-  display: flex;
-  width: 620px;
-  margin-bottom: 50px;
 }
 
 .sign_box02 .birth input {
@@ -604,19 +598,6 @@ fieldset {
   border-radius: 10px;
   margin-left: 20px;
   padding-left: 10px;
-}
-
-.sign_box02 .size input {
-  width: 78px;
-  height: 40px;
-  margin-left: 20px;
-  border-radius: 10px;
-  padding-left: 10px;
-}
-
-.sign_box02 .size select {
-  border: 1px solid #EAEAEA;
-  cursor: pointer;
 }
 
 .sign_box02 .txt {

@@ -245,7 +245,7 @@ p, h1, h3, a {
   overflow: hidden;
   transition: all 0.3s ease;
   position: absolute;
-  top: 142px;
+  top: 182px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 100;
@@ -333,7 +333,7 @@ p, h1, h3, a {
   background-image: url("../images/partition_icon.png");
   background-size: cover;
 }
-.gnb_menu_outer .gnb_menu .sub_menu:hover {
+.gnb_menu_outer .gnb_menu .sub_menu a:hover {
   border: 3px solid #C97A63;
   background-color: rgba(230, 227, 222, 0.5);
   transition: all 0.3s ease;
